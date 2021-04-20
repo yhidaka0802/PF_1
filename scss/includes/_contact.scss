@@ -1,0 +1,90 @@
+/****************************************:
+
+contact
+
+*****************************************:*/
+
+
+.contact {
+
+
+  &_form {
+    /* contactフォーム*/
+
+    margin-right: 20%;
+
+  }
+
+  &_form_ttl {
+    /* contactフォームのラベルタイトル*/
+    width: 46%;
+    height: 100%;
+    @include rem(30);
+    line-height: lineHeight(44, 30);
+
+    position: relative;
+
+
+
+    &.__ttl {
+      margin-top: -39%;
+
+    }
+
+    &::after {
+      /* contactフォームのラベル疑似要素*/
+
+      content: "必須";
+      position: absolute;
+      right: 44px;
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: center;
+      width: 96px;
+      line-height: 32px;
+      text-align: center;
+      @include rem(15);
+      // color: $cRed;
+      // border: 1px solid $cRed;
+      border-radius: 2px;
+
+
+    }
+
+    &.__company {
+      &::after {
+        /* contactフォームのラベル疑似要素削除*/
+        display: none;
+      }
+
+    }
+  }
+
+  &_form_box {
+    /* contactフォームの入力エリア*/
+
+    width: 520px;
+    height: 64px;
+    @include rem(20);
+
+
+
+    .select_with {
+      width: 520px;
+      color: $cBlack;
+    }
+  }
+
+  &_txtarea {
+    /* contactフォームの入力エリア*/
+
+    width: 520px;
+    height: 320px;
+    margin-bottom: 104px;
+    padding-top: 20px;
+    @include rem(20);
+    color: $cBlack;
+
+  }
+
+}

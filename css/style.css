@@ -1,0 +1,535 @@
+@charset "UTF-8";
+@-webkit-keyframes animationFadeIn1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@keyframes animationFadeIn1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.anime:nth-child(1) {
+  -webkit-animation: animationFadeIn1 1.2s ease 0.15s;
+          animation: animationFadeIn1 1.2s ease 0.15s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes animationFadeIn2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes animationFadeIn2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.anime:nth-child(2) {
+  -webkit-animation: animationFadeIn2 1.2s ease 0.3s;
+          animation: animationFadeIn2 1.2s ease 0.3s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes animationFadeIn3 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes animationFadeIn3 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.anime:nth-child(3) {
+  -webkit-animation: animationFadeIn3 1.2s ease 0.45s;
+          animation: animationFadeIn3 1.2s ease 0.45s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes animationFadeIn4 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes animationFadeIn4 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.anime:nth-child(4) {
+  -webkit-animation: animationFadeIn4 1.2s ease 0.6s;
+          animation: animationFadeIn4 1.2s ease 0.6s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes animationFadeIn5 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes animationFadeIn5 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.anime:nth-child(5) {
+  -webkit-animation: animationFadeIn5 1.2s ease 0.75s;
+          animation: animationFadeIn5 1.2s ease 0.75s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes animationFadeIn6 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes animationFadeIn6 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.anime:nth-child(6) {
+  -webkit-animation: animationFadeIn6 1.2s ease 0.9s;
+          animation: animationFadeIn6 1.2s ease 0.9s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+body {
+  font-size: 16px;
+  /*IE9以前に対応する*/
+  font-size: 1rem;
+  margin: 0 auto;
+  font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "Parisienne", cursive, "Noto Serif JP", serif;
+  color: #000;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+/*************
+
+モック画像
+終わったら削除
+
+**************/
+.mock {
+  /* モック画像 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 375px;
+  opacity: 0.3;
+  /* 反転 */
+  -webkit-filter: hue-rotate(180deg);
+          filter: hue-rotate(180deg);
+  /* テキストを掴まないように */
+  pointer-events: none;
+  z-index: 999;
+}
+
+.section_ttl {
+  font-size: 80px;
+  /*IE9以前に対応する*/
+  font-size: 5rem;
+  display: block;
+  text-align: center;
+}
+
+.section_inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pc_txt {
+  font-size: 30px;
+  /*IE9以前に対応する*/
+  font-size: 1.875rem;
+  line-height: 55px;
+}
+
+.pc_middle {
+  font-size: 25px;
+  /*IE9以前に対応する*/
+  font-size: 1.5625rem;
+  line-height: 50px;
+}
+
+.pc_small {
+  font-size: 20px;
+  /*IE9以前に対応する*/
+  font-size: 1.25rem;
+  line-height: 40px;
+}
+
+.tab_txt {
+  font-size: 25px;
+  /*IE9以前に対応する*/
+  font-size: 1.5625rem;
+  line-height: 45px;
+}
+
+.tab_middle {
+  font-size: 20px;
+  /*IE9以前に対応する*/
+  font-size: 1.25rem;
+  line-height: 40px;
+}
+
+.tab_small {
+  font-size: 16px;
+  /*IE9以前に対応する*/
+  font-size: 1rem;
+  line-height: 40px;
+}
+
+.sp_txt {
+  font-size: 16px;
+  /*IE9以前に対応する*/
+  font-size: 1rem;
+  line-height: 32px;
+}
+
+.sp_middle {
+  font-size: 14px;
+  /*IE9以前に対応する*/
+  font-size: 0.875rem;
+  line-height: 30px;
+}
+
+.sp_small {
+  font-size: 12px;
+  /*IE9以前に対応する*/
+  font-size: 0.75rem;
+  line-height: 25px;
+}
+
+/* パンくずリスト */
+.breadcrumb {
+  max-width: 90%;
+  height: 24px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 520px) {
+  .breadcrumb {
+    max-width: 83%;
+    height: 35px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .breadcrumb {
+    max-width: 63%;
+    height: 35px;
+  }
+}
+
+.breadcrumb ul {
+  width: 100%;
+  line-height: 24px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 520px) {
+  .breadcrumb ul {
+    line-height: 35px;
+  }
+}
+
+.breadcrumb li {
+  font-size: 12px;
+  /*IE9以前に対応する*/
+  font-size: 0.75rem;
+}
+
+@media screen and (max-width: 520px) {
+  .breadcrumb li {
+    font-size: 14px;
+    /*IE9以前に対応する*/
+    font-size: 0.875rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .breadcrumb li {
+    font-size: 16px;
+    /*IE9以前に対応する*/
+    font-size: 1rem;
+  }
+}
+
+.breadcrumb li::after {
+  content: ">";
+  margin-right: 12px;
+  font-size: 12px;
+  /*IE9以前に対応する*/
+  font-size: 0.75rem;
+}
+
+@media screen and (max-width: 520px) {
+  .breadcrumb li::after {
+    margin-right: 17px;
+    font-size: 14px;
+    /*IE9以前に対応する*/
+    font-size: 0.875rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .breadcrumb li::after {
+    margin-right: 16px;
+    font-size: 16px;
+    /*IE9以前に対応する*/
+    font-size: 1rem;
+  }
+}
+
+.breadcrumb li:last-child::after {
+  content: "";
+}
+
+.breadcrumb_img img {
+  width: 15px;
+  margin: 0 5px 7px 0;
+}
+
+@media screen and (max-width: 520px) {
+  .breadcrumb_img img {
+    width: 18px;
+    margin: 0 9px 11px 0;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .breadcrumb_img img {
+    width: 20px;
+    margin: 0 8px 11px 0;
+  }
+}
+
+.breadcrumb a {
+  margin-right: 12px;
+}
+
+@media screen and (max-width: 520px) {
+  .breadcrumb a {
+    margin-right: 17px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .breadcrumb a {
+    margin-right: 16px;
+  }
+}
+
+/****************************************:
+
+header
+
+*****************************************:*/
+/****************************************:
+
+nav (ハンバーガーメニュー含む)
+
+*****************************************:*/
+/****************************************:
+
+下層ページ
+
+*****************************************:*/
+/****************************************:
+
+contact
+
+*****************************************:*/
+.contact_form {
+  /* contactフォーム*/
+  margin-right: 20%;
+}
+
+.contact_form_ttl {
+  /* contactフォームのラベルタイトル*/
+  width: 46%;
+  height: 100%;
+  font-size: 30px;
+  /*IE9以前に対応する*/
+  font-size: 1.875rem;
+  line-height: 1.46667;
+  position: relative;
+}
+
+.contact_form_ttl.__ttl {
+  margin-top: -39%;
+}
+
+.contact_form_ttl::after {
+  /* contactフォームのラベル疑似要素*/
+  content: "必須";
+  position: absolute;
+  right: 44px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-align: center;
+  width: 96px;
+  line-height: 32px;
+  text-align: center;
+  font-size: 15px;
+  /*IE9以前に対応する*/
+  font-size: 0.9375rem;
+  border-radius: 2px;
+}
+
+.contact_form_ttl.__company::after {
+  /* contactフォームのラベル疑似要素削除*/
+  display: none;
+}
+
+.contact_form_box {
+  /* contactフォームの入力エリア*/
+  width: 520px;
+  height: 64px;
+  font-size: 20px;
+  /*IE9以前に対応する*/
+  font-size: 1.25rem;
+}
+
+.contact_form_box .select_with {
+  width: 520px;
+  color: #000;
+}
+
+.contact_txtarea {
+  /* contactフォームの入力エリア*/
+  width: 520px;
+  height: 320px;
+  margin-bottom: 104px;
+  padding-top: 20px;
+  font-size: 20px;
+  /*IE9以前に対応する*/
+  font-size: 1.25rem;
+  color: #000;
+}
+
+/****************************************:
+
+footer
+
+*****************************************:*/
