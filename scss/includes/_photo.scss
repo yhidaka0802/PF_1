@@ -3,3 +3,96 @@
 下層ページ
 
 *****************************************:*/
+
+.fv h2 {
+  margin-bottom: 100px;
+}
+
+.slider {
+  width: 94%;
+  margin: 0 auto;
+  position: relative;
+
+  & img {
+    width: 100%;
+    height: auto;
+  }
+
+  & .slick-slide {
+    margin: 0 10px;
+  }
+
+  &_block {
+    padding: 10px;
+  }
+}
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 42%;
+  cursor: pointer;
+  outline: none;
+  border-top: 2px solid #888686;
+  border-right: 2px solid #888686;
+  width: 15px;
+  height: 15px;
+}
+
+.slick-prev {
+  left: -1.5%;
+  transform: rotate(-135deg);
+}
+
+.slick-next {
+  right: -1.5%;
+  transform: rotate(45deg);
+}
+
+.slick-dots {
+  text-align: center;
+  margin: 20px 0 0 0;
+
+  & li {
+    display: inline-block;
+    margin: 0 5px;
+  }
+
+  & button {
+    color: transparent;
+    outline: none;
+    border: none;
+    width: 8px;
+    height: 10px;
+    display: block;
+    border-radius: 50%;
+    background: $cGray;
+  }
+}
+
+
+.spring_area {
+  & h2 {
+    font-size: 64px;
+    text-align-last: left;
+    color: $cPink;
+    margin-bottom: 55px;
+  }
+
+  .slick-dots .slick-active button {
+    background: $cPink;
+  }
+}
+
+.text_area {
+  box-shadow: 5px 0px 10px #ccc;
+
+
+  &_title {
+    padding: 20px 10px;
+  }
+
+  &_text {
+    padding: 20px 10px;
+  }
+}

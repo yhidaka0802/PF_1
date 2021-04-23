@@ -60,6 +60,35 @@ body {
   }
 }
 
+.button {
+  font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "Parisienne", cursive, "Noto Serif JP", serif;
+  width: 153px;
+  padding: 5px;
+  font-size: 20px;
+  /*IE9以前に対応する*/
+  font-size: 1.25rem;
+  border: 1px solid #000;
+  color: #fff;
+  background: #000;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+@media screen and (max-width: 520px) {
+  .button {
+    width: 120px;
+    padding: 0;
+    font-size: 16px;
+    /*IE9以前に対応する*/
+    font-size: 1rem;
+  }
+}
+
+.button:hover {
+  color: #000;
+  background: #fff;
+}
+
 /* パンくずリスト */
 .breadcrumb {
   max-width: 90%;
@@ -200,6 +229,98 @@ nav (ハンバーガーメニュー含む)
 下層ページ
 
 *****************************************:*/
+.fv h2 {
+  margin-bottom: 100px;
+}
+
+.slider {
+  width: 94%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+}
+
+.slider .slick-slide {
+  margin: 0 10px;
+}
+
+.slider_block {
+  padding: 10px;
+}
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 42%;
+  cursor: pointer;
+  outline: none;
+  border-top: 2px solid #888686;
+  border-right: 2px solid #888686;
+  width: 15px;
+  height: 15px;
+}
+
+.slick-prev {
+  left: -1.5%;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+
+.slick-next {
+  right: -1.5%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.slick-dots {
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.slick-dots button {
+  color: transparent;
+  outline: none;
+  border: none;
+  width: 8px;
+  height: 10px;
+  display: block;
+  border-radius: 50%;
+  background: #CDC9CA;
+}
+
+.spring_area h2 {
+  font-size: 64px;
+  text-align-last: left;
+  color: #E3A4B4;
+  margin-bottom: 55px;
+}
+
+.spring_area .slick-dots .slick-active button {
+  background: #E3A4B4;
+}
+
+.text_area {
+  -webkit-box-shadow: 5px 0px 10px #ccc;
+          box-shadow: 5px 0px 10px #ccc;
+}
+
+.text_area_title {
+  padding: 20px 10px;
+}
+
+.text_area_text {
+  padding: 20px 10px;
+}
+
 /****************************************:
 
 blog
@@ -383,73 +504,175 @@ blog
 contact
 
 *****************************************:*/
+*:focus {
+  outline: none;
+}
+
+.container {
+  background: -webkit-linear-gradient(45deg, white 0%, rgba(242, 193, 193, 0.88) 31%, rgba(248, 76, 116, 0.68) 83%, rgba(220, 95, 95, 0.63) 96%, rgba(220, 95, 95, 0.61) 100%);
+  background: linear-gradient(45deg, white 0%, rgba(242, 193, 193, 0.88) 31%, rgba(248, 76, 116, 0.68) 83%, rgba(220, 95, 95, 0.63) 96%, rgba(220, 95, 95, 0.61) 100%);
+}
+
+.contact {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contact .section_ttl {
+  margin: 36px 0;
+  font-size: 60px;
+  /*IE9以前に対応する*/
+  font-size: 3.75rem;
+  font-family: 'Parisienne';
+}
+
+@media screen and (max-width: 520px) {
+  .contact .section_ttl {
+    font-size: 32px;
+    /*IE9以前に対応する*/
+    font-size: 2rem;
+    margin: 20px 0;
+  }
+}
+
+.contact .section_inner {
+  min-width: 420px;
+  width: 52%;
+  height: 62.5%;
+  margin: 0 auto;
+  padding: 24px;
+  background: #fff;
+}
+
+@media screen and (max-width: 520px) {
+  .contact .section_inner {
+    min-width: 250px;
+    width: 86%;
+    height: 79%;
+  }
+}
+
 .contact_form {
-  /* contactフォーム*/
-  margin-right: 20%;
+  text-align: center;
+}
+
+.contact_form_box {
+  background: #ECECEC;
+  border: 1px solid #707070;
+}
+
+@media screen and (max-width: 520px) {
+  .contact_form_box {
+    display: block;
+    width: 100%;
+  }
+}
+
+.contact_box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 24px 0;
+}
+
+@media screen and (max-width: 520px) {
+  .contact_box {
+    display: block;
+    width: 100%;
+  }
 }
 
 .contact_form_ttl {
   /* contactフォームのラベルタイトル*/
-  width: 46%;
-  height: 100%;
-  font-size: 30px;
+  width: 100px;
+  margin-bottom: 24px;
+  margin-right: 10%;
+  text-align: left;
+  font-size: 18px;
   /*IE9以前に対応する*/
-  font-size: 1.875rem;
-  line-height: 1.46667;
-  position: relative;
+  font-size: 1.125rem;
 }
 
-.contact_form_ttl.__ttl {
-  margin-top: -39%;
-}
-
-.contact_form_ttl::after {
-  /* contactフォームのラベル疑似要素*/
-  content: "必須";
-  position: absolute;
-  right: 44px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  text-align: center;
-  width: 96px;
-  line-height: 32px;
-  text-align: center;
-  font-size: 15px;
-  /*IE9以前に対応する*/
-  font-size: 0.9375rem;
-  border-radius: 2px;
-}
-
-.contact_form_ttl.__company::after {
-  /* contactフォームのラベル疑似要素削除*/
-  display: none;
+@media screen and (max-width: 520px) {
+  .contact_form_ttl {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin-right: 0;
+    margin-bottom: 8px;
+    font-size: 14px;
+    /*IE9以前に対応する*/
+    font-size: 0.875rem;
+  }
 }
 
 .contact_form_box {
   /* contactフォームの入力エリア*/
-  width: 520px;
-  height: 64px;
-  font-size: 20px;
+  width: 330px;
+  height: 48px;
+  padding: 0 0 0 10px;
+  font-size: 14px;
   /*IE9以前に対応する*/
-  font-size: 1.25rem;
+  font-size: 0.875rem;
+  font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "Parisienne", cursive, "Noto Serif JP", serif;
 }
 
-.contact_form_box .select_with {
-  width: 520px;
-  color: #000;
+@media screen and (max-width: 520px) {
+  .contact_form_box {
+    width: 100%;
+    height: 36px;
+    font-size: 12px;
+    /*IE9以前に対応する*/
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .contact .__area {
+    display: block;
+    width: 100%;
+  }
 }
 
 .contact_txtarea {
   /* contactフォームの入力エリア*/
-  width: 520px;
-  height: 320px;
-  margin-bottom: 104px;
-  padding-top: 20px;
-  font-size: 20px;
+  width: 330px;
+  height: 202px;
+  margin-bottom: 36px;
+  padding: 10px;
+  background: #ECECEC;
+  border: 1px solid #707070;
+  font-size: 14px;
   /*IE9以前に対応する*/
-  font-size: 1.25rem;
-  color: #000;
+  font-size: 0.875rem;
+  font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "Parisienne", cursive, "Noto Serif JP", serif;
+}
+
+@media screen and (max-width: 520px) {
+  .contact_txtarea {
+    width: 100%;
+    height: 202px;
+    margin-bottom: 8px;
+    font-size: 12px;
+    /*IE9以前に対応する*/
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .contact_btn {
+    margin-bottom: 12px;
+  }
 }
 
 /****************************************:
@@ -457,3 +680,25 @@ contact
 footer
 
 *****************************************:*/
+.footer {
+  margin-top: 116px;
+  padding-bottom: 64px;
+  text-align: center;
+}
+
+@media screen and (max-width: 520px) {
+  .footer {
+    margin-top: 28px;
+    padding-bottom: 32px;
+  }
+}
+
+.footer_txt {
+  font-size: 10px;
+  /*IE9以前に対応する*/
+  font-size: 0.625rem;
+}
+
+.footer_txt.__w {
+  color: #fff;
+}
