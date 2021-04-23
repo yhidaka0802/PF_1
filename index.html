@@ -1,116 +1,120 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0, viewport-fit=cover" />
-  <title>〇〇〇〇</title>
-  <meta name="description" content="" />
-  <!--PC：１２０文字以内 スマホ：70文字以内-->
-  <meta property="og:url" content="https://〇〇.com/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="" />
-  <meta property="og:description" content="" />
-  <meta property="og:site_name" content="" />
-  <meta property="og:image" content=" https://〇〇.com/images/〇〇" />
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="Twitterのアカウントをいれる">
-  <meta name="robots" content="INDEX,FOLLOW">
-  <link rel="icon" type="image/x-icon" href="">
-  <link rel="apple-touch-icon" sizes="180×180" href="">
-  <link rel="stylesheet" href="css/reset.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet"> 
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Baskervville%7CLa+Belle+Aurore&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
 
-</head>
-<body>
-  <!-- モック モバイル-->
-  <img src="" alt="" class="mock" />
+  <body>
+    <div id="splash">
+      <div id="splash_text"></div>
+      <div class="loaderBg loaderBg-up"></div>
+      <div class="loaderBg loaderBg-down"></div>
+    </div>
 
-  <!-- ハンバーガーメニューopen -->
-  <!-- <img src="" alt="" class="mock" /> -->
-
-
-
-  <!-- モック タブレット-->
-  <!-- <img src="" alt="" class="mock" /> -->
-
-  <!-- モック パソコン -->
-  <!-- <img src="" alt="" class="mock" /> -->
-  <div class="container">
-    <!-- ヘッダー -->
-    <header class="header">
-      <h1 class="header_ttl">
-        <a href="index.html">
-          <img src="" alt="">
-        </a>
-      </h1><!-- /.header_ttl -->
-      <!-- ナビ -->
-      <nav class="nav" id="js-nav">
-        <ul class="nav_list">
-          <li class="nav_item">
-            <a href="photo.html" class="nav_link">Photo</a>
-          </li>
-          <!-- /.nav_item -->
-          <li class="nav_item">
-            <a href="contact.html" class="nav_link">Contact</a>
-          </li>
-          <!-- /.nav_item -->
-          <li class="nav_item">
-            <a href="blog.html" class="nav_link">Blog</a>
-          </li>
-          <!-- /.nav_item -->
+    <header id="header">
+      <div id="slider">
+        <div class="top_ttl-box">
+          <h1 class="eleIn">Four seasons</h1>
+          <p class="eleIn">四季</p>
+        </div>
+        <ul id="sns">
+          <li><a href="photo.html">photos</a></li>
+          <li><a href="contact.html">contact</a></li>
+          <li><a href="blog.html">blog</a></li>
         </ul>
-      </nav>
-      <!-- /.nav -->
+      </div>
     </header>
-    <div class="fv">
-    </div><!-- /.fv -->
-    <!-- パンくずリスト -->
-    <!-- <div class="section_inner"> -->
-      <!-- <div class="breadcrumb"> -->
-        <!-- <ul itemscope itemtype="https://schema.org/BreadcrumbList"> -->
-          <!-- <li itemprop="itemListElement" itemscope itemtype="https://schema.org/Listitem"> -->
-            <!-- <a itemprop="item" href="#"><span itemprop="name">HOME</span></a> -->
-            <!-- <meta itemprop="position" content="1" /> -->
-          <!-- </li> -->
-          <!-- <li itemprop="itemListElement" itemscope itemtype="https://schema.org/Listitem"> -->
-            <!-- <a itemprop="item" href="#"><span itemprop="name">下層</span></a> -->
-            <!-- <meta itemprop="position" content="2" /> -->
-          <!-- </li> -->
-        <!-- </ul> -->
-      <!-- </div> -->
-    <!-- </div> -->
-    <!-- パンくずリストここまで -->
-    <!-- メインコンテンツ -->
+
     <main>
-      <!-- セクション：top_〇〇 -->
-      <section class="">
-        <h2 class="section_ttl"></h2>
-        <div class="section_inner">
+
+      <section id="season" class="box" data-section-name="season">
+        <div class="box-area">
+          <div class="descript_box eleIn">
+            <h2>Four seasons <span>四季</span></h2>
+            <p>世界の四季<br /></p>
+            <dl>
+              <dt>日本の四季</dt>
+              <dd>日本の四季は特殊です</dd>
+              <dd>日本が特徴的なのは「春」と</dd>
+              <dd>「秋」が明確に季節となっていることです。</dd>
+            </dl>
+          </div>
         </div>
       </section>
-      <!-- セクション：top_〇〇 -->
-      <section class="">
-        <h2 class="section_ttl"></h2>
-        <div class="section_inner">
+
+      <section id="spring" class="box" data-section-name="Spring">
+        <div class="season_box">
+          <h2 class="textSepa">Spring</h2>
+          <a href="photo.html" class="btnGradient eleIn"
+            >View Photos</a
+          >
+        </div>
+      </section>
+
+      <section id="summer" class="box" data-section-name="Summer">
+        <div class="season_box">
+          <h2 class="textSepa">Summer</h2>
+          <a href="photo.html" class="btnGradient eleIn"
+            >View Photos</a
+          >
+        </div>
+      </section>
+
+      <section id="autumn" class="box" data-section-name="Autumn">
+        <div class="season_box">
+          <h2 class="textSepa">Autumn</h2>
+          <a href="photo.html" class="btnGradient eleIn"
+            >View Photos</a
+            >
+        </div>
+      </section>
+
+      <section id="winter" class="box" data-section-name="Winter">
+        <div class="season_box">
+          <h2 class="textSepa">Winter</h2>
+          <a href="photo.html" class="btnGradient eleIn"
+            >View Photos</a
+          >
         </div>
       </section>
     </main>
-    <!-- フッター -->
-    <footer class="footer">
-      <small class="footer_txt">&copy;SHIKI ALL rights reserved</small>
-    </footer>
-  </div><!-- /.container -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="scripts/main.js"></script>
-  <script src="scripts/JS/parts1.js"></script>
-  <script src="scripts/JS/parts2.js"></script>
-  <script src="scripts/JS/parts3.js"></script>
-  <script src="scripts/jQ/parts-jQ1.js"></script>
-  <script src="scripts/jQ/parts-jQ2.js"></script>
-  <script src="scripts/JS/parts3.js"></script>
 
-</body>
+    <footer id="footer">
+      <small>Explanation of the four seasons</small>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
 </html>
