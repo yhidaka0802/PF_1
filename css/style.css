@@ -190,9 +190,408 @@ body {
 header
 
 *****************************************:*/
+/* heading */
+.top_ttl-box {
+  color: #fff;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.top_ttl-box h1, h2 {
+  color: #fff;
+  font-size: 6vw;
+  font-family: 'La Belle Aurore', cursive;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  line-height: 1;
+}
+
+.top_ttl-box p {
+  font-size: 1.2vw;
+  letter-spacing: 0.5em;
+}
+
+@media only screen and (max-width: 768px) {
+  .top_ttl-box h1, h2 {
+    font-size: 4em;
+    line-height: 1.5;
+  }
+  .top_ttl-box p {
+    font-size: 1.5em;
+    letter-spacing: 0.2em;
+  }
+}
+
 /****************************************:
 
 nav (ハンバーガーメニュー含む)
+
+*****************************************:*/
+#splash {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  z-index: 9999;
+}
+
+#splash_text {
+  width: 100%;
+  color: #fff;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+}
+
+#splash_text svg {
+  height: 2px;
+}
+
+.loaderBg {
+  width: 100%;
+  height: 50%;
+  background: #017490;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+  -webkit-transition: all 0.2s cubic-bezier(0.04, 0.4, 0.3, 0.9);
+  transition: all 0.2s cubic-bezier(0.04, 0.4, 0.3, 0.9);
+}
+
+.loaderBg-up {
+  -webkit-transform-origin: center top;
+          transform-origin: center top;
+}
+
+.loaderBg-down {
+  -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+  position: absolute;
+  bottom: 0;
+}
+
+.coveranime {
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+}
+
+.btnGradient {
+  padding: 15px 70px;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  display: inline-block;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+
+#summer .btnGradient {
+  color: #fff;
+  border-color: #fff;
+}
+
+.btnGradient:hover,
+#summer .btnGradient:hover {
+  color: #fff;
+  border-color: transparent;
+  background: -webkit-linear-gradient(350deg, #3caee8 0%, #9844b7 30%, #23cc83 100%);
+  background: linear-gradient(100deg, #3caee8 0%, #9844b7 30%, #23cc83 100%);
+  background-size: 200% auto;
+  background-position: right center;
+  -webkit-box-shadow: 0 5px 10px rgba(250, 120, 140, 0.4);
+          box-shadow: 0 5px 10px rgba(250, 120, 140, 0.4);
+}
+
+#slider {
+  width: 100%;
+  height: 100vh;
+}
+
+.none {
+  display: none;
+}
+
+.blur {
+  -webkit-animation: blurAnime 1s forwards;
+          animation: blurAnime 1s forwards;
+}
+
+@-webkit-keyframes blurAnime {
+  from {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    opacity: 0;
+    -webkit-filter: blur(8px);
+            filter: blur(8px);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+  }
+}
+
+@keyframes blurAnime {
+  from {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    opacity: 0;
+    -webkit-filter: blur(8px);
+            filter: blur(8px);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+  }
+}
+
+.eleIn {
+  opacity: 0;
+}
+
+.textSepa {
+  margin-bottom: 60px;
+}
+
+.textSepa span {
+  opacity: 0;
+}
+
+.textSepa.in span {
+  -webkit-animation: text_anime_on 1s ease-out forwards;
+          animation: text_anime_on 1s ease-out forwards;
+}
+
+@-webkit-keyframes text_anime_on {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes text_anime_on {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.box {
+  padding: 40px;
+  text-align: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#season {
+  background: url("../images/spring/sakura.jpg") no-repeat center/cover;
+}
+
+#season.box {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+@media screen and (max-width: 768px) {
+  #season.box {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+#spring {
+  background: url("../images/spring/haru.jpg") no-repeat center/cover;
+}
+
+#summer {
+  background: url("../images/summer/summer.jpg") no-repeat center/cover;
+}
+
+#autumn {
+  background: url("../images/autumn/fall.jpg") no-repeat center/cover;
+}
+
+#winter {
+  background: url("../images/winter/fuyu.jpg") no-repeat center/cover;
+}
+
+#contact {
+  background: url("../images/winter/fuyu.jpg") no-repeat center/cover;
+}
+
+.pageChange {
+  font-size: 16px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: fixed;
+  right: 3%;
+  top: 23%;
+  z-index: 10;
+}
+
+.pageChange a {
+  height: 25px;
+  padding: 8px;
+  margin-bottom: 7px;
+  color: #fff;
+  display: block;
+  position: relative;
+}
+
+.pageChange a.active:after {
+  -webkit-box-shadow: inset 0 0 0 5px;
+          box-shadow: inset 0 0 0 5px;
+}
+
+.pageChange a .textOpacity {
+  padding-right: 15px;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+  position: absolute;
+  top: 0;
+  right: 15px;
+}
+
+.pageChange a:hover .textOpacity {
+  opacity: 1;
+}
+
+.pageChange a:after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  margin: auto;
+  border: 1px solid;
+  border-radius: 50%;
+  -webkit-transition: -webkit-box-shadow 0.5s ease;
+  transition: -webkit-box-shadow 0.5s ease;
+  transition: box-shadow 0.5s ease;
+  transition: box-shadow 0.5s ease, -webkit-box-shadow 0.5s ease;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 3px;
+  bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .pageChange a .textOpacity {
+    display: none;
+  }
+}
+
+#summer h2 {
+  color: #fff;
+}
+
+#sns img {
+  width: 20px;
+}
+
+#sns {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  top: 25px;
+  right: 25px;
+}
+
+#sns li {
+  margin: 0 20px;
+}
+
+#sns a {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#sns a:hover {
+  opacity: 0.5;
+}
+
+.descript_box {
+  width: 100%;
+  max-width: 300px;
+  padding: 45px;
+  margin: 0 0 0 45px;
+  text-align: left;
+  letter-spacing: 0.03em;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+@media screen and (max-width: 768px) {
+  .descript_box {
+    margin: 0;
+  }
+}
+
+.descript_box h2 {
+  margin: 0 0 40px 0;
+  font-size: 15px;
+  color: #333;
+  line-height: 1.8;
+  font-family: "Baskervville", serif;
+  text-align: center;
+}
+
+.descript_box h2 span {
+  font-size: 20px;
+  display: block;
+}
+
+.descript_box p {
+  margin: 0 0 45px 0;
+}
+
+small {
+  color: #fff;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  position: fixed;
+  top: 40%;
+  left: 20px;
+}
+
+/****************************************:
+
+下層ページ
 
 *****************************************:*/
 /****************************************:
