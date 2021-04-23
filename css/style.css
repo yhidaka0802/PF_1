@@ -623,13 +623,9 @@ small {
 下層ページ
 
 *****************************************:*/
-/****************************************:
-
-下層ページ
-
-*****************************************:*/
 .fv h2 {
   margin-bottom: 100px;
+  color: #000;
 }
 
 .slider {
@@ -907,7 +903,7 @@ contact
   outline: none;
 }
 
-.container {
+.container.__contact {
   background: -webkit-linear-gradient(45deg, white 0%, rgba(242, 193, 193, 0.88) 31%, rgba(248, 76, 116, 0.68) 83%, rgba(220, 95, 95, 0.63) 96%, rgba(220, 95, 95, 0.61) 100%);
   background: linear-gradient(45deg, white 0%, rgba(242, 193, 193, 0.88) 31%, rgba(248, 76, 116, 0.68) 83%, rgba(220, 95, 95, 0.63) 96%, rgba(220, 95, 95, 0.61) 100%);
 }
