@@ -601,6 +601,184 @@ small {
 *****************************************:*/
 /****************************************:
 
+blog
+
+*****************************************:*/
+.blog .section_ttl {
+  font-family: 'Parisienne', cursive;
+  margin-bottom: 104px;
+}
+
+.blog .section_inner {
+  width: 90%;
+}
+
+@media screen and (max-width: 960px) {
+  .blog .section_inner {
+    width: 90%;
+  }
+}
+
+.blog_content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 170px;
+  cursor: pointer;
+  position: relative;
+}
+
+@media screen and (max-width: 960px) {
+  .blog_content {
+    margin-bottom: 12%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .blog_content {
+    margin-bottom: 13%;
+  }
+}
+
+.blog_content:nth-child(even) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.blog_content:nth-child(even) .blog_imgbox {
+  margin-right: auto;
+  margin-left: initial;
+}
+
+.blog_content:nth-child(even) .blog_txtbox {
+  text-align: right;
+}
+
+.blog_content:nth-child(even) .blog_txt {
+  text-align: right;
+}
+
+.blog_content:hover {
+  opacity: .7;
+}
+
+.blog_imgbox {
+  width: 80%;
+  height: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 960px) {
+  .blog_imgbox {
+    width: 75%;
+    height: 50%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .blog_imgbox {
+    width: 83%;
+    height: 20%;
+  }
+}
+
+.blog_imgbox:nth-child(even) {
+  margin-left: auto;
+}
+
+.blog img {
+  height: 100%;
+}
+
+.blog_txtbox {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-shadow: 5px 5px 5px #fff;
+}
+
+.blog_txtbox:after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #000;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transform-origin: center top;
+          transform-origin: center top;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.blog_txtbox:hover::after {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.blog_ttl {
+  font-size: 70px;
+  /*IE9以前に対応する*/
+  font-size: 4.375rem;
+  letter-spacing: 0.05em;
+}
+
+@media screen and (max-width: 960px) {
+  .blog_ttl {
+    font-size: 50px;
+    /*IE9以前に対応する*/
+    font-size: 3.125rem;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .blog_ttl {
+    font-size: 20px;
+    /*IE9以前に対応する*/
+    font-size: 1.25rem;
+    letter-spacing: 0.02em;
+  }
+}
+
+.blog_txt {
+  font-size: 40px;
+  /*IE9以前に対応する*/
+  font-size: 2.5rem;
+  text-align: left;
+}
+
+@media screen and (max-width: 960px) {
+  .blog_txt {
+    font-size: 32px;
+    /*IE9以前に対応する*/
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .blog_txt {
+    font-size: 12px;
+    /*IE9以前に対応する*/
+    font-size: 0.75rem;
+  }
+}
+
+.blog_txt:nth-child(odd) {
+  text-align: right;
+}
+
+/****************************************:
+
 contact
 
 *****************************************:*/
