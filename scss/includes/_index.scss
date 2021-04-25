@@ -2,50 +2,50 @@
 // index.html用
 @charset "utf-8";
 
-#splash {
-  width: 100%;
-  height: 100%;
-  color: #fff;
-  text-align: center;
-  position: fixed;
-  z-index: 9999;
-}
+// #splash {
+//   width: 100%;
+//   height: 100%;
+//   color: #fff;
+//   text-align: center;
+//   position: fixed;
+//   z-index: 9999;
+// }
 
-#splash_text {
-  width: 100%;
-  color: #fff;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 999;
-}
+// #splash_text {
+//   width: 100%;
+//   color: #fff;
+//   transform: translate(-50%, -50%);
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   z-index: 999;
+// }
 
-#splash_text svg {
-  height: 2px;
-}
+// #splash_text svg {
+//   height: 2px;
+// }
 
-.loaderBg {
-  width: 100%;
-  height: 50%;
-  background: #017490;
-  transform: scaleY(1);
-  transition: all 0.2s cubic-bezier(0.04, 0.4, 0.3, 0.9);
-}
+// .loaderBg {
+//   width: 100%;
+//   height: 50%;
+//   background: #017490;
+//   transform: scaleY(1);
+//   transition: all 0.2s cubic-bezier(0.04, 0.4, 0.3, 0.9);
+// }
 
-.loaderBg-up {
-  transform-origin: center top;
-}
+// .loaderBg-up {
+//   transform-origin: center top;
+// }
 
-.loaderBg-down {
-  transform-origin: center bottom;
-  position: absolute;
-  bottom: 0;
-}
+// .loaderBg-down {
+//   transform-origin: center bottom;
+//   position: absolute;
+//   bottom: 0;
+// }
 
-.coveranime {
-  transform: scaleY(0);
-}
+// .coveranime {
+//   transform: scaleY(0);
+// }
 
 .btnGradient {
   padding: 15px 70px;
@@ -77,87 +77,49 @@
   height: 100vh;
 }
 
-// .modaal-overlay {
-//   background: linear-gradient(45deg, rgba(100, 160, 200, 0.8),rgba(240, 100, 121, 0.9)) !important;
+// .blurActive {
+//   animation: Blur 1s forwards;
 // }
 
-.none {
-  display: none;
-}
+// @keyframes Blur {
+//   from {
+//     transform: scale(1.1);
+//     opacity: 0;
+//     filter: blur(8px);
+//   }
 
-// .modaal-fullscreen .modaal-content-container {
-//   color: #fff;
-//   text-align: center;
-//   background: linear-gradient(45deg, rgba(88, 182, 211, 0.9),rgba(229, 93, 135, 0.9));
+//   to {
+//     transform: scale(1);
+//     opacity: 1;
+//     filter: blur(0);
+//   }
 // }
 
-// .modaal-fullscreen .modaal-close {
-//   background: none;
-//   right: 20px;
+// .eleIn {
+//   opacity: 0;
 // }
 
-// .modaal-close:focus:after,
-// .modaal-close:focus:before,
-// .modaal-close:hover:after,
-// .modaal-close:hover:before {
-//   background: #666;
-// }
-
-// .picTitle {
-//   padding: 10px 0;
-//   display: block;
-// }
-
-// .modaal-content-container img {
-//   width: 100%;
-//   max-width: 660px;
-//   height: auto;
-//   border: 7px solid #fff;
-// }
-
-.blur {
-  animation: blurAnime 1s forwards;
-}
-
-@keyframes blurAnime {
-  from {
-    transform: scale(1.1);
-    opacity: 0;
-    filter: blur(8px);
-  }
-
-  to {
-    transform: scale(1);
-    opacity: 1;
-    filter: blur(0);
-  }
-}
-
-.eleIn {
-  opacity: 0;
-}
-
-.textSepa{
+.textSepa {
   margin-bottom: 60px;
 }
 
-.textSepa span {
-  opacity: 0;
-}
+// .textSepa span {
+//   opacity: 0;
+// }
 
-.textSepa.in span {
-  animation: text_anime_on 1s ease-out forwards;
-}
+// .textSepa.in span {
+//   animation: text_anime_on 1s ease-out forwards;
+// }
 
-@keyframes text_anime_on {
-  0% {
-    opacity: 0;
-  }
+// @keyframes text_anime_on {
+//   0% {
+//     opacity: 0;
+//   }
 
-  100% {
-    opacity: 1;
-  }
-}
+//   100% {
+//     opacity: 1;
+//   }
+// }
 
 .box {
   padding: 40px;
@@ -182,23 +144,23 @@
 }
 
 #spring {
-  background: url("../images/spring/haru.jpg") no-repeat center /cover;
+  background: url("../images/spring/haru.jpg") no-repeat center / cover;
 }
 
 #summer {
-  background: url("../images/summer/summer.jpg") no-repeat center /cover;
+  background: url("../images/summer/summer.jpg") no-repeat center / cover;
 }
 
 #autumn {
-  background: url("../images/autumn/fall.jpg") no-repeat center /cover;
+  background: url("../images/autumn/fall.jpg") no-repeat center / cover;
 }
 
 #winter {
-  background: url("../images/winter/fuyu.jpg") no-repeat center /cover;
+  background: url("../images/winter/fuyu.jpg") no-repeat center / cover;
 }
 
 #contact {
-  background: url("../images/winter/fuyu.jpg") no-repeat center /cover;
+  background: url("../images/winter/fuyu.jpg") no-repeat center / cover;
 }
 
 .pageChange {
@@ -295,7 +257,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .descript_box{
+  .descript_box {
     margin: 0;
   }
 }
@@ -318,14 +280,12 @@
   margin: 0 0 45px 0;
 }
 
-
-
-small{
-  color: #fff;
+small {
+  // color: #fff;
   letter-spacing: 0.1em;
   line-height: 1;
-  writing-mode: vertical-rl;
-  position: fixed;
-  top:40%;
-  left:20px;
+  // writing-mode: vertical-rl;
+  // position: fixed;
+  // top:40%;
+  // left:20px;
 }
