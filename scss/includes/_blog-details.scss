@@ -81,6 +81,7 @@ blog-details
     @include rem(40);
     line-height: lineHight(64, 40);
     color: $cBlack;
+    font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho";
 
     @include mq(lg) {
       @include rem(28);

@@ -230,10 +230,10 @@ header
   left: 50%;
 }
 
-.top_ttl-box h1, h2 {
+.top_ttl-box .top_ttl_h1, h2 {
   color: #fff;
   font-size: 6vw;
-  font-family: 'La Belle Aurore', cursive;
+  font-family: 'Parisienne', cursive;
   font-weight: normal;
   letter-spacing: 0.05em;
   line-height: 1;
@@ -255,11 +255,6 @@ header
   }
 }
 
-/****************************************:
-
-nav (ハンバーガーメニュー含む)
-
-*****************************************:*/
 .btnGradient {
   padding: 15px 70px;
   color: #fff;
@@ -357,10 +352,25 @@ nav (ハンバーガーメニュー含む)
   position: fixed;
   top: 25px;
   right: 25px;
+  z-index: 999;
+}
+
+@media screen and (max-width: 520px) {
+  .header_ul {
+    top: 16px;
+  }
 }
 
 .header_li {
-  margin: 0 20px;
+  margin: 0 10px;
+}
+
+@media screen and (max-width: 520px) {
+  .header_li {
+    font-size: 12px;
+    /*IE9以前に対応する*/
+    font-size: 0.75rem;
+  }
 }
 
 .header_a {
@@ -415,15 +425,15 @@ nav (ハンバーガーメニュー含む)
   margin-top: -40px !important;
 }
 
-<<<<<<< HEAD
+/****************************************:
+
+下層ページ
+
 *****************************************:*/
 .fv h2 {
   margin-bottom: 100px;
   color: #000;
 }
-=======
-/****************************************:
->>>>>>> 06de1758f3911f9b5eef26246fc09aebe69e4fb8
 
 .slider {
   width: 94%;
@@ -545,6 +555,22 @@ nav (ハンバーガーメニュー含む)
 blog
 
 *****************************************:*/
+.blog {
+  padding: 20px 0 137px;
+}
+
+@media screen and (max-width: 960px) {
+  .blog {
+    padding: 60px 0 0;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .blog {
+    padding: 33px 0 34px;
+  }
+}
+
 .blog .section_ttl {
   font-family: 'Parisienne', cursive;
   margin-bottom: 104px;
@@ -680,6 +706,8 @@ blog
 }
 
 .blog_ttl {
+  font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho";
+  color: #000;
   font-size: 70px;
   /*IE9以前に対応する*/
   font-size: 4.375rem;
@@ -735,48 +763,6 @@ blog
 blog-details
 
 *****************************************:*/
-<<<<<<< HEAD
-*:focus {
-  outline: none;
-}
-
-.container.__contact {
-  background: -webkit-linear-gradient(45deg, white 0%, rgba(242, 193, 193, 0.88) 31%, rgba(248, 76, 116, 0.68) 83%, rgba(220, 95, 95, 0.63) 96%, rgba(220, 95, 95, 0.61) 100%);
-  background: linear-gradient(45deg, white 0%, rgba(242, 193, 193, 0.88) 31%, rgba(248, 76, 116, 0.68) 83%, rgba(220, 95, 95, 0.63) 96%, rgba(220, 95, 95, 0.61) 100%);
-}
-
-.contact {
-  width: 100%;
-  margin: 0 auto;
-}
-
-.contact .section_ttl {
-  margin: 36px 0;
-  font-size: 60px;
-  /*IE9以前に対応する*/
-  font-size: 3.75rem;
-  font-family: 'Parisienne';
-}
-
-@media screen and (max-width: 520px) {
-  .contact .section_ttl {
-    font-size: 32px;
-    /*IE9以前に対応する*/
-    font-size: 2rem;
-    margin: 20px 0;
-  }
-}
-
-.contact .section_inner {
-  min-width: 420px;
-  width: 52%;
-  height: 62.5%;
-  margin: 0 auto;
-  padding: 24px;
-  background: #fff;
-}
-
-=======
 .details {
   padding: 56px 0 146px;
 }
@@ -875,6 +861,7 @@ blog-details
   font-size: 2.5rem;
   line-height: lineHight(64, 40);
   color: #000;
+  font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho";
 }
 
 @media screen and (max-width: 960px) {
@@ -1006,7 +993,7 @@ contact
   outline: none;
 }
 
-.container {
+.container.__contact {
   background: -webkit-linear-gradient(45deg, white 0%, rgba(242, 193, 193, 0.88) 31%, rgba(248, 76, 116, 0.68) 83%, rgba(220, 95, 95, 0.63) 96%, rgba(220, 95, 95, 0.61) 100%);
   background: linear-gradient(45deg, white 0%, rgba(242, 193, 193, 0.88) 31%, rgba(248, 76, 116, 0.68) 83%, rgba(220, 95, 95, 0.63) 96%, rgba(220, 95, 95, 0.61) 100%);
 }
@@ -1042,7 +1029,6 @@ contact
   background: #fff;
 }
 
->>>>>>> 06de1758f3911f9b5eef26246fc09aebe69e4fb8
 @media screen and (max-width: 520px) {
   .contact .section_inner {
     min-width: 250px;

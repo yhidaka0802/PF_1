@@ -5,6 +5,16 @@ blog
 *****************************************:*/
 
 .blog {
+  padding: 20px 0 137px;
+  
+  @include mq(lg) {
+    padding: 60px 0 0;
+    
+  }
+  @include mq(md) {
+    padding: 33px 0 34px;
+    
+  }
 
   .section_ttl {
     font-family: 'Parisienne', cursive;
@@ -111,6 +121,8 @@ blog
 
 
   &_ttl {
+    font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho";
+    color: $cBlack;
     @include rem(70);
     letter-spacing: letterSpacing(50);
 
