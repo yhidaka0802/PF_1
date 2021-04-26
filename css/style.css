@@ -692,15 +692,42 @@ small {
   background: #CDC9CA;
 }
 
-.spring_area h2 {
+.photo_area h2 {
   font-size: 64px;
   text-align-last: left;
-  color: #E3A4B4;
   margin-bottom: 55px;
 }
 
-.spring_area .slick-dots .slick-active button {
+.photo_area.__spring h2 {
+  color: #E3A4B4;
+}
+
+.photo_area.__spring .slick-dots .slick-active button {
   background: #E3A4B4;
+}
+
+.photo_area.__summer h2 {
+  color: #F5A600;
+}
+
+.photo_area.__summer .slick-dots .slick-active button {
+  background: #F5A600;
+}
+
+.photo_area.__autumn h2 {
+  color: #A57027;
+}
+
+.photo_area.__autumn .slick-dots .slick-active button {
+  background: #A57027;
+}
+
+.photo_area.__winter h2 {
+  color: #C1D3E9;
+}
+
+.photo_area.__winter .slick-dots .slick-active button {
+  background: #C1D3E9;
 }
 
 .text_area {

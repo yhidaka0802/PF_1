@@ -72,16 +72,53 @@
 }
 
 
-.spring_area {
+.photo_area {
+
   & h2 {
     font-size: 64px;
     text-align-last: left;
-    color: $cPink;
     margin-bottom: 55px;
   }
 
-  .slick-dots .slick-active button {
-    background: $cPink;
+  &.__spring {
+
+    & h2 {
+      color: $cPink;
+    }
+
+    .slick-dots .slick-active button {
+      background: $cPink;
+    }
+  }
+
+  &.__summer {
+    & h2 {
+      color: $cOrange;
+    }
+
+    .slick-dots .slick-active button {
+      background: $cOrange;
+    }
+
+  }
+  &.__autumn {
+    & h2 {
+      color: $cBrown;
+    }
+
+    .slick-dots .slick-active button {
+      background: $cBrown;
+    }
+  }
+
+  &.__winter {
+    & h2 {
+      color: $cBlue;
+    }
+
+    .slick-dots .slick-active button {
+      background: $cBlue;
+    }
   }
 }
 
