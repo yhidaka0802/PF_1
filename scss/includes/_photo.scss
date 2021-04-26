@@ -4,19 +4,30 @@
 
 *****************************************:*/
 
+.photo_header {
+  margin-bottom: 100px;
+
+  & ul {
+    z-index: 9999;
+  }
+}
+
 .fv h2 {
   margin-bottom: 100px;
   color: $cBlack;
 }
 
 .slider {
-  width: 94%;
+  width: 96%;
   margin: 0 auto;
   position: relative;
 
   & img {
     width: 100%;
-    height: auto;
+    height: 250px;
+    object-fit: cover;
+    z-index: -1;
+
   }
 
   & .slick-slide {

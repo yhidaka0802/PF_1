@@ -415,25 +415,36 @@ nav (ハンバーガーメニュー含む)
   margin-top: -40px !important;
 }
 
-<<<<<<< HEAD
+/****************************************:
+
+下層ページ
+
 *****************************************:*/
+.photo_header {
+  margin-bottom: 100px;
+}
+
+.photo_header ul {
+  z-index: 9999;
+}
+
 .fv h2 {
   margin-bottom: 100px;
   color: #000;
 }
-=======
-/****************************************:
->>>>>>> 06de1758f3911f9b5eef26246fc09aebe69e4fb8
 
 .slider {
-  width: 94%;
+  width: 96%;
   margin: 0 auto;
   position: relative;
 }
 
 .slider img {
   width: 100%;
-  height: auto;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
 }
 
 .slider .slick-slide {
@@ -735,48 +746,6 @@ blog
 blog-details
 
 *****************************************:*/
-<<<<<<< HEAD
-*:focus {
-  outline: none;
-}
-
-.container.__contact {
-  background: -webkit-linear-gradient(45deg, white 0%, rgba(242, 193, 193, 0.88) 31%, rgba(248, 76, 116, 0.68) 83%, rgba(220, 95, 95, 0.63) 96%, rgba(220, 95, 95, 0.61) 100%);
-  background: linear-gradient(45deg, white 0%, rgba(242, 193, 193, 0.88) 31%, rgba(248, 76, 116, 0.68) 83%, rgba(220, 95, 95, 0.63) 96%, rgba(220, 95, 95, 0.61) 100%);
-}
-
-.contact {
-  width: 100%;
-  margin: 0 auto;
-}
-
-.contact .section_ttl {
-  margin: 36px 0;
-  font-size: 60px;
-  /*IE9以前に対応する*/
-  font-size: 3.75rem;
-  font-family: 'Parisienne';
-}
-
-@media screen and (max-width: 520px) {
-  .contact .section_ttl {
-    font-size: 32px;
-    /*IE9以前に対応する*/
-    font-size: 2rem;
-    margin: 20px 0;
-  }
-}
-
-.contact .section_inner {
-  min-width: 420px;
-  width: 52%;
-  height: 62.5%;
-  margin: 0 auto;
-  padding: 24px;
-  background: #fff;
-}
-
-=======
 .details {
   padding: 56px 0 146px;
 }
@@ -998,7 +967,7 @@ contact
   outline: none;
 }
 
-.container {
+.container.__contact {
   background: -webkit-linear-gradient(45deg, white 0%, rgba(242, 193, 193, 0.88) 31%, rgba(248, 76, 116, 0.68) 83%, rgba(220, 95, 95, 0.63) 96%, rgba(220, 95, 95, 0.61) 100%);
   background: linear-gradient(45deg, white 0%, rgba(242, 193, 193, 0.88) 31%, rgba(248, 76, 116, 0.68) 83%, rgba(220, 95, 95, 0.63) 96%, rgba(220, 95, 95, 0.61) 100%);
 }
@@ -1034,7 +1003,6 @@ contact
   background: #fff;
 }
 
->>>>>>> 06de1758f3911f9b5eef26246fc09aebe69e4fb8
 @media screen and (max-width: 520px) {
   .contact .section_inner {
     min-width: 250px;
