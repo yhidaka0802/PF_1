@@ -415,11 +415,131 @@ nav (ハンバーガーメニュー含む)
   margin-top: -40px !important;
 }
 
-/****************************************:
-
-下層ページ
-
+<<<<<<< HEAD
 *****************************************:*/
+.fv h2 {
+  margin-bottom: 100px;
+  color: #000;
+}
+=======
+/****************************************:
+>>>>>>> 06de1758f3911f9b5eef26246fc09aebe69e4fb8
+
+.slider {
+  width: 94%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+}
+
+.slider .slick-slide {
+  margin: 0 10px;
+}
+
+.slider_block {
+  padding: 10px;
+}
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 42%;
+  cursor: pointer;
+  outline: none;
+  border-top: 2px solid #888686;
+  border-right: 2px solid #888686;
+  width: 15px;
+  height: 15px;
+}
+
+.slick-prev {
+  left: -1.5%;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+
+.slick-next {
+  right: -1.5%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.slick-dots {
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.slick-dots button {
+  color: transparent;
+  outline: none;
+  border: none;
+  width: 8px;
+  height: 10px;
+  display: block;
+  border-radius: 50%;
+  background: #CDC9CA;
+}
+
+.photo_area h2 {
+  font-size: 64px;
+  text-align-last: left;
+  margin-bottom: 55px;
+}
+
+.photo_area.__spring h2 {
+  color: #E3A4B4;
+}
+
+.photo_area.__spring .slick-dots .slick-active button {
+  background: #E3A4B4;
+}
+
+.photo_area.__summer h2 {
+  color: #F5A600;
+}
+
+.photo_area.__summer .slick-dots .slick-active button {
+  background: #F5A600;
+}
+
+.photo_area.__autumn h2 {
+  color: #A57027;
+}
+
+.photo_area.__autumn .slick-dots .slick-active button {
+  background: #A57027;
+}
+
+.photo_area.__winter h2 {
+  color: #C1D3E9;
+}
+
+.photo_area.__winter .slick-dots .slick-active button {
+  background: #C1D3E9;
+}
+
+.text_area {
+  -webkit-box-shadow: 5px 0px 10px #ccc;
+          box-shadow: 5px 0px 10px #ccc;
+}
+
+.text_area_title {
+  padding: 20px 10px;
+}
+
+.text_area_text {
+  padding: 20px 10px;
+}
+
 /****************************************:
 
 blog
@@ -615,6 +735,48 @@ blog
 blog-details
 
 *****************************************:*/
+<<<<<<< HEAD
+*:focus {
+  outline: none;
+}
+
+.container.__contact {
+  background: -webkit-linear-gradient(45deg, white 0%, rgba(242, 193, 193, 0.88) 31%, rgba(248, 76, 116, 0.68) 83%, rgba(220, 95, 95, 0.63) 96%, rgba(220, 95, 95, 0.61) 100%);
+  background: linear-gradient(45deg, white 0%, rgba(242, 193, 193, 0.88) 31%, rgba(248, 76, 116, 0.68) 83%, rgba(220, 95, 95, 0.63) 96%, rgba(220, 95, 95, 0.61) 100%);
+}
+
+.contact {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contact .section_ttl {
+  margin: 36px 0;
+  font-size: 60px;
+  /*IE9以前に対応する*/
+  font-size: 3.75rem;
+  font-family: 'Parisienne';
+}
+
+@media screen and (max-width: 520px) {
+  .contact .section_ttl {
+    font-size: 32px;
+    /*IE9以前に対応する*/
+    font-size: 2rem;
+    margin: 20px 0;
+  }
+}
+
+.contact .section_inner {
+  min-width: 420px;
+  width: 52%;
+  height: 62.5%;
+  margin: 0 auto;
+  padding: 24px;
+  background: #fff;
+}
+
+=======
 .details {
   padding: 56px 0 146px;
 }
@@ -872,6 +1034,7 @@ contact
   background: #fff;
 }
 
+>>>>>>> 06de1758f3911f9b5eef26246fc09aebe69e4fb8
 @media screen and (max-width: 520px) {
   .contact .section_inner {
     min-width: 250px;
