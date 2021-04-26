@@ -2,51 +2,6 @@
 // index.html用
 @charset "utf-8";
 
-// #splash {
-//   width: 100%;
-//   height: 100%;
-//   color: #fff;
-//   text-align: center;
-//   position: fixed;
-//   z-index: 9999;
-// }
-
-// #splash_text {
-//   width: 100%;
-//   color: #fff;
-//   transform: translate(-50%, -50%);
-//   position: absolute;
-//   top: 50%;
-//   left: 50%;
-//   z-index: 999;
-// }
-
-// #splash_text svg {
-//   height: 2px;
-// }
-
-// .loaderBg {
-//   width: 100%;
-//   height: 50%;
-//   background: #017490;
-//   transform: scaleY(1);
-//   transition: all 0.2s cubic-bezier(0.04, 0.4, 0.3, 0.9);
-// }
-
-// .loaderBg-up {
-//   transform-origin: center top;
-// }
-
-// .loaderBg-down {
-//   transform-origin: center bottom;
-//   position: absolute;
-//   bottom: 0;
-// }
-
-// .coveranime {
-//   transform: scaleY(0);
-// }
-
 .btnGradient {
   padding: 15px 70px;
   color: #fff;
@@ -57,69 +12,28 @@
   transition: all 0.4s ease-out;
 }
 
-#summer .btnGradient {
+.btnGradient {
   color: #fff;
   border-color: #fff;
 }
 
-.btnGradient:hover,
-#summer .btnGradient:hover {
+.btnGradient:hover {
   color: #fff;
   border-color: transparent;
-  background: linear-gradient(100deg, #3caee8 0%, #9844b7 30%, #23cc83 100%);
+  background: linear-gradient(100deg, #6aace9 0%, #6444aa 30%, #238b87 100%);
   background-size: 200% auto;
   background-position: right center;
-  box-shadow: 0 5px 10px rgba(250, 120, 140, 0.4);
+  box-shadow: 0 5px 10px rgba(220, 130, 140, 0.3);
 }
 
-#slider {
+.slider_box {
   width: 100%;
   height: 100vh;
 }
 
-// .blurActive {
-//   animation: Blur 1s forwards;
-// }
-
-// @keyframes Blur {
-//   from {
-//     transform: scale(1.1);
-//     opacity: 0;
-//     filter: blur(8px);
-//   }
-
-//   to {
-//     transform: scale(1);
-//     opacity: 1;
-//     filter: blur(0);
-//   }
-// }
-
-// .eleIn {
-//   opacity: 0;
-// }
-
 .textSepa {
   margin-bottom: 60px;
 }
-
-// .textSepa span {
-//   opacity: 0;
-// }
-
-// .textSepa.in span {
-//   animation: text_anime_on 1s ease-out forwards;
-// }
-
-// @keyframes text_anime_on {
-//   0% {
-//     opacity: 0;
-//   }
-
-//   100% {
-//     opacity: 1;
-//   }
-// }
 
 .box {
   padding: 40px;
@@ -129,120 +43,52 @@
   display: flex;
 }
 
-#season {
+.season_area {
   background: url("../images/spring/sakura.jpg") no-repeat center / cover;
 }
 
-#season.box {
+.season_area.box {
   justify-content: flex-start;
 }
 
 @media screen and (max-width: 768px) {
-  #season.box {
+  .season_area.box {
     justify-content: center;
   }
 }
 
-#spring {
+.spring_area {
   background: url("../images/spring/haru.jpg") no-repeat center / cover;
 }
 
-#summer {
+.summer_area {
   background: url("../images/summer/summer.jpg") no-repeat center / cover;
 }
 
-#autumn {
+.autumn_area {
   background: url("../images/autumn/fall.jpg") no-repeat center / cover;
 }
 
-#winter {
+.winter_area {
   background: url("../images/winter/fuyu.jpg") no-repeat center / cover;
 }
 
-#contact {
-  background: url("../images/winter/fuyu.jpg") no-repeat center / cover;
-}
-
-.pageChange {
-  font-size: 16px;
-  transform: translateY(-50%);
-  position: fixed;
-  right: 3%;
-  top: 23%;
-  z-index: 10;
-}
-
-.pageChange a {
-  height: 25px;
-  padding: 8px;
-  margin-bottom: 7px;
-  color: #fff;
-  display: block;
-  position: relative;
-}
-
-.pageChange a.active:after {
-  box-shadow: inset 0 0 0 5px;
-}
-
-.pageChange a .textOpacity {
-  padding-right: 15px;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-  position: absolute;
-  top: 0;
-  right: 15px;
-}
-
-.pageChange a:hover .textOpacity {
-  opacity: 1;
-}
-
-.pageChange a:after {
-  content: "";
-  width: 10px;
-  height: 10px;
-  margin: auto;
-  border: 1px solid;
-  border-radius: 50%;
-  transition: box-shadow 0.5s ease;
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 3px;
-  bottom: 0;
-}
-
-@media screen and (max-width: 768px) {
-  .pageChange a .textOpacity {
-    display: none;
-  }
-}
-
-#summer h2 {
-  color: #fff;
-}
-
-#sns img {
-  width: 20px;
-}
-
-#sns {
+.header_ul {
   display: flex;
   position: fixed;
   top: 25px;
   right: 25px;
 }
 
-#sns li {
+.header_li {
   margin: 0 20px;
 }
 
-#sns a {
+.header_a {
   transition: all 0.5s;
 }
 
-#sns a:hover {
+.header_a:hover {
   opacity: 0.5;
 }
 
@@ -262,30 +108,29 @@
   }
 }
 
-.descript_box h2 {
+.descript_h2 {
   margin: 0 0 40px 0;
   font-size: 15px;
   color: #333;
   line-height: 1.8;
-  font-family: "Baskervville", serif;
   text-align: center;
 }
 
-.descript_box h2 span {
+.descript_span {
   font-size: 20px;
   display: block;
 }
 
-.descript_box p {
+.descript_p {
   margin: 0 0 45px 0;
 }
 
-small {
-  // color: #fff;
+.footer_small {
   letter-spacing: 0.1em;
   line-height: 1;
-  // writing-mode: vertical-rl;
-  // position: fixed;
-  // top:40%;
-  // left:20px;
+}
+
+.__mt {
+  padding: 0 !important;
+  margin-top: -40px !important;
 }
