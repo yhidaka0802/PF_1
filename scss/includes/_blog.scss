@@ -9,19 +9,23 @@ blog
   .section_ttl {
     font-family: 'Parisienne', cursive;
     margin-bottom: 104px;
-  }
-
-  .section_inner {
-
-    width: 90%;
 
     @include mq(lg) {
-      width: 90%;
-
+      @include rem(80);
+      margin-bottom: 32px;
+    }
+    @include mq(md) {
+      @include rem(40);
+      margin-bottom: 24px;
     }
   }
 
+  .section_inner {
+    width: 90%;
+  }
+
   &_content {
+    /*blogコンテンツ*/
     display: flex;
     margin-bottom: 170px;
     cursor: pointer;
@@ -36,6 +40,7 @@ blog
     }
 
     &:nth-child(even) {
+      /*見出しと画像左右入れ替え*/
       flex-direction: row-reverse;
 
       .blog_imgbox {
@@ -47,12 +52,9 @@ blog
         text-align: right;
       }
 
-
-
       .blog_txt {
         text-align: right;
       }
-
     }
 
     &:hover {
@@ -60,8 +62,8 @@ blog
     }
   }
 
-
   &_imgbox {
+    /*記事画像*/
     width: 80%;
     height: 80%;
     object-fit: cover;
@@ -81,11 +83,8 @@ blog
     }
   }
 
-  img {
-    height: 100%
-  }
-
   &_txtbox {
+    /*記事テキストエリア*/
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -112,11 +111,8 @@ blog
 
 
   &_ttl {
-
     @include rem(70);
     letter-spacing: letterSpacing(50);
-
-   
 
     @include mq(lg) {
       @include rem(50);
@@ -126,8 +122,6 @@ blog
       @include rem(20);
       letter-spacing: letterSpacing(20);
     }
-
-
   }
 
   &_txt {

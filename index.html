@@ -16,43 +16,42 @@
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.css"
     />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css"
-    />
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
 
   <body>
-    <div id="splash">
-      <div id="splash_text"></div>
-      <div class="loaderBg loaderBg-up"></div>
-      <div class="loaderBg loaderBg-down"></div>
-    </div>
-
     <header id="header">
-      <div id="slider">
+      <div id="slider" class="slider_box">
         <div class="top_ttl-box">
-          <h1 class="eleIn">Four seasons</h1>
-          <p class="eleIn">四季</p>
+          <h1 class="top_ttl_h1">Four seasons</h1>
+          <p class="top_ttl_p">四季</p>
         </div>
-        <ul id="sns">
-          <li><a href="photo.html">photos</a></li>
-          <li><a href="contact.html">contact</a></li>
-          <li><a href="blog.html">blog</a></li>
+        <ul id="header_ul" class="header_ul">
+          <li class="header_li">
+            <a href="index.html" class="header_a">home</a>
+          </li>
+          <li class="header_li">
+            <a href="photo.html" class="header_a">photos</a>
+          </li>
+          <li class="header_li">
+            <a href="contact.html" class="header_a">contact</a>
+          </li>
+          <li class="header_li">
+            <a href="blog.html" class="header_a">blog</a>
+          </li>
         </ul>
       </div>
     </header>
 
     <main>
-
-      <section id="season" class="box" data-section-name="season">
+      <section id="season" class="season_area box">
         <div class="box-area">
-          <div class="descript_box eleIn">
-            <h2>Four seasons <span>四季</span></h2>
-            <p>世界の四季<br /></p>
+          <div class="descript_box">
+            <h2 class="descript_h2">
+              Four seasons <span class="descript_span">四季</span>
+            </h2>
+            <p class="descript_p">世界の四季<br /></p>
             <dl>
               <dt>日本の四季</dt>
               <dd>日本の四季は特殊です</dd>
@@ -63,45 +62,39 @@
         </div>
       </section>
 
-      <section id="spring" class="box" data-section-name="Spring">
+      <section id="spring" class="spring_area box">
         <div class="season_box">
           <h2 class="textSepa">Spring</h2>
-          <a href="photo.html" class="btnGradient eleIn"
-            >View Photos</a
-          >
+          <a href="photo.html" class="btnGradient">View Photos</a>
         </div>
       </section>
 
-      <section id="summer" class="box" data-section-name="Summer">
+      <section id="summer" class="summer_area box">
         <div class="season_box">
           <h2 class="textSepa">Summer</h2>
-          <a href="photo.html" class="btnGradient eleIn"
-            >View Photos</a
-          >
+          <a href="photo.html" class="btnGradient">View Photos</a>
         </div>
       </section>
 
-      <section id="autumn" class="box" data-section-name="Autumn">
+      <section id="autumn" class="autumn_area box">
         <div class="season_box">
           <h2 class="textSepa">Autumn</h2>
-          <a href="photo.html" class="btnGradient eleIn"
-            >View Photos</a
-            >
+          <a href="photo.html" class="btnGradient">View Photos</a>
         </div>
       </section>
 
-      <section id="winter" class="box" data-section-name="Winter">
+      <section id="winter" class="winter_area box">
         <div class="season_box">
           <h2 class="textSepa">Winter</h2>
-          <a href="photo.html" class="btnGradient eleIn"
-            >View Photos</a
-          >
+          <a href="photo.html" class="btnGradient">View Photos</a>
         </div>
       </section>
     </main>
 
-    <footer id="footer">
-      <small>Explanation of the four seasons</small>
+    <footer class="footer __mt">
+      <small class="footer_txt footer_small"
+        >&copy;SHIKI ALL rights reserved</small
+      >
     </footer>
 
     <script
@@ -109,12 +102,9 @@
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
-    <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js"></script>
+    <script src="scripts/other.js"></script>
     <script src="scripts/main.js"></script>
   </body>
 </html>
