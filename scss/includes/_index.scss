@@ -78,10 +78,19 @@
   position: fixed;
   top: 25px;
   right: 25px;
+  z-index: 999;
+
+  @include mq(md) {
+    top: 16px;
+  }
 }
 
 .header_li {
-  margin: 0 20px;
+  margin: 0 10px;
+
+  @include mq(md) {
+    @include rem(12);
+  }
 }
 
 .header_a {

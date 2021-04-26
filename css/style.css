@@ -230,10 +230,10 @@ header
   left: 50%;
 }
 
-.top_ttl-box h1, h2 {
+.top_ttl-box .top_ttl_h1, h2 {
   color: #fff;
   font-size: 6vw;
-  font-family: 'La Belle Aurore', cursive;
+  font-family: 'Parisienne', cursive;
   font-weight: normal;
   letter-spacing: 0.05em;
   line-height: 1;
@@ -255,11 +255,6 @@ header
   }
 }
 
-/****************************************:
-
-nav (ハンバーガーメニュー含む)
-
-*****************************************:*/
 .btnGradient {
   padding: 15px 70px;
   color: #fff;
@@ -357,10 +352,25 @@ nav (ハンバーガーメニュー含む)
   position: fixed;
   top: 25px;
   right: 25px;
+  z-index: 999;
+}
+
+@media screen and (max-width: 520px) {
+  .header_ul {
+    top: 16px;
+  }
 }
 
 .header_li {
-  margin: 0 20px;
+  margin: 0 10px;
+}
+
+@media screen and (max-width: 520px) {
+  .header_li {
+    font-size: 12px;
+    /*IE9以前に対応する*/
+    font-size: 0.75rem;
+  }
 }
 
 .header_a {
@@ -556,6 +566,22 @@ nav (ハンバーガーメニュー含む)
 blog
 
 *****************************************:*/
+.blog {
+  padding: 20px 0 137px;
+}
+
+@media screen and (max-width: 960px) {
+  .blog {
+    padding: 60px 0 0;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .blog {
+    padding: 33px 0 34px;
+  }
+}
+
 .blog .section_ttl {
   font-family: 'Parisienne', cursive;
   margin-bottom: 104px;
@@ -691,6 +717,8 @@ blog
 }
 
 .blog_ttl {
+  font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho";
+  color: #000;
   font-size: 70px;
   /*IE9以前に対応する*/
   font-size: 4.375rem;
@@ -775,6 +803,7 @@ blog-details
 }
 
 .details_imgbox {
+  /* 記事詳細画像*/
   max-width: 1070px;
   width: 100%;
   height: auto;
@@ -793,6 +822,7 @@ blog-details
 }
 
 .details_txtbox {
+  /*テキストエリア*/
   text-align: left;
   color: #000;
   margin-bottom: 149px;
@@ -810,6 +840,7 @@ blog-details
 }
 
 .details_date {
+  /*日付*/
   font-size: 40px;
   /*IE9以前に対応する*/
   font-size: 2.5rem;
@@ -835,11 +866,13 @@ blog-details
 }
 
 .details_ttl {
+  /*記事タイトル*/
   font-size: 40px;
   /*IE9以前に対応する*/
   font-size: 2.5rem;
   line-height: lineHight(64, 40);
   color: #000;
+  font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho";
 }
 
 @media screen and (max-width: 960px) {
@@ -872,6 +905,7 @@ blog-details
 }
 
 .details_txt {
+  /*記事本文*/
   font-size: 22px;
   /*IE9以前に対応する*/
   font-size: 1.375rem;
@@ -886,6 +920,7 @@ blog-details
 }
 
 .details_page {
+  /*ページャー*/
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -913,6 +948,7 @@ blog-details
 }
 
 .details_prev {
+  /*戻る*/
   position: relative;
 }
 
@@ -929,6 +965,7 @@ blog-details
 }
 
 .details_next {
+  /*次へ*/
   position: relative;
 }
 
