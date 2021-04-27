@@ -8,6 +8,9 @@
   background: $cBlack;
   transition: .5s;
 
+  margin: 0 auto;
+  display: block;
+
   @include mq(md){
     width: 120px;
     padding: 0;
