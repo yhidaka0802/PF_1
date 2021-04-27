@@ -72,6 +72,8 @@ body {
   background: #000;
   -webkit-transition: .5s;
   transition: .5s;
+  margin: 0 auto;
+  display: block;
 }
 
 @media screen and (max-width: 520px) {
@@ -1003,12 +1005,29 @@ contact
   margin: 0 auto;
 }
 
+.contact_main {
+  padding-top: 202px;
+}
+
+@media screen and (max-width: 960px) {
+  .contact_main {
+    padding-top: 120px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .contact_main {
+    padding-top: 69px;
+  }
+}
+
 .contact .section_ttl {
   margin: 36px 0;
   font-size: 60px;
   /*IE9以前に対応する*/
   font-size: 3.75rem;
   font-family: 'Parisienne';
+  color: #000;
 }
 
 @media screen and (max-width: 520px) {
