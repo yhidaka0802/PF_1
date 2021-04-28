@@ -306,8 +306,8 @@ header
   right: 0;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-transition: 4s linear transform .9s;
-  transition: 4s linear transform .9s;
+  -webkit-transition: 4s linear transform .4s;
+  transition: 4s linear transform .4s;
 }
 
 .slide_img.zoom {

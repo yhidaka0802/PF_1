@@ -1,5 +1,4 @@
 "use strict";
-// kazuki 用
 
 $('.slider').slick({
   autoplay: true, //自動的に動き出すか。初期値はfalse。
