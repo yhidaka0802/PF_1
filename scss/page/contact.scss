@@ -1,0 +1,116 @@
+@import "../base";
+@import "../config";
+@import "../mixin";
+
+body {
+  background: rgb(253, 247, 251);
+  background: linear-gradient(20deg, rgba(253, 247, 251, 1) 0%, rgba(222, 94, 134, 1) 89%);
+}
+
+.contact {
+  margin-top: 200px;
+  padding: 0 4%;
+
+  .inner {
+    margin: 0 auto;
+    padding-bottom: 30px;
+    max-width: 800px;
+    width: 100%;
+    background: $cWhite;
+    @include mq(sp){
+      padding-bottom: 50px;
+    }
+    
+    .site-title {
+      margin-bottom: 30px;
+      padding-top: 40px;
+      color: $cBlack;
+      text-align: center;
+      font-size: 60px;
+
+      @include mq(sp){
+        padding-top: 80px;
+        font-size: 40px;
+      }
+    }
+  }
+
+  &_form {
+    margin: 0 auto;
+    width: 85%;
+
+    &_title {
+      width: 35%;
+      height: 100%;
+      font-size: 16px;
+      @include mq(sp){
+        margin-bottom: 10px;
+      }
+    }
+    &_box {
+      padding-left: 8px;
+      width: 65%;
+      height: 40px;
+      border-width: 1px;
+      background: $cGray_pale;
+      font-size: 16px;
+      @include mq(sp){
+        width: 99%;
+        padding-left: 0;
+        margin-bottom: 20px;
+      }
+    }
+    &_textarea{
+      margin-bottom: 40px;
+      padding: 7px;
+      width: 65%;
+      height: 200px;
+      background: $cGray_pale;
+      font-size: 16px;
+      @include mq(sp){
+        width: 94%;
+      }
+    }
+  }
+
+  &_box {
+    display: flex;
+    margin-bottom: 20px;
+    @include mq(sp){
+      flex-direction: column;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &_button {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height:50px;
+    background: $cBlack;
+    color: $cWhite;
+    font-size: 20px;
+    font-family: $font;
+    cursor: pointer;
+    @include mq(sp){
+      height: 40px;
+
+    }
+    &:hover {
+      background: $cWhite;
+      color: $cBlack;
+    }
+  }
+}
+
+footer {
+  margin-top: 150px;
+  margin-bottom: 30px;
+  color: $cWhite;
+  text-align: center;
+  @include mq(sp){
+    margin: 50px 0;
+  }
+}

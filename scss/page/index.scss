@@ -1,0 +1,126 @@
+@import "../base";
+@import "../config";
+@import "../mixin";
+@import "../slick_index";
+@import "../scrollfy";
+
+.mainvisual {
+  @include flex-center;
+  height: 100vh;
+  
+  &_wrapper {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    @include mq(sp){
+      h1 {
+        font-size: 40px;
+      }
+    }
+    
+    small{
+      color: $cWhite;
+      letter-spacing: 0.4em;
+      font-size: 20px;
+      @include mq(sp){
+        font-size: 26px;
+        letter-spacing: 0.3em
+      }
+    }
+  }
+}
+
+.about {
+  @include top-bg;
+  background: url("/images/spring/sakura.jpg") no-repeat center;
+  position: relative;
+  @include mq(sp){
+    @include flex-center;
+  }
+
+  &_wrapper {
+    position: absolute;
+    top: 22%;
+    left: 5%;
+    background-color: rgba($color: #fff, $alpha: 0.8);
+    display: inline-block;
+    padding: 3%;
+    @include mq(sp){
+      padding: 15%;
+      position: static;
+    }
+  }
+  &_txt {
+    width: 220px;
+  }
+
+  &_title {
+    color: $cFont;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 60px;
+    small{
+      font-size: 16px;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  .first-txt {
+    margin-bottom: 60px;
+  }
+  p {
+    line-height: 1.5;
+  }
+}
+
+.top-visual {
+  @include top-bg;
+  @include flex-center;
+  &_wrapper {
+    text-align: center;
+    .section_title{
+      margin-bottom: 80px;
+      @include mq(sp){
+        font-size: 75px;
+        margin-bottom: 100px;
+      }
+    }
+    .button {
+      display: inline-block;
+      color: $cWhite;
+      border: 1px solid $cWhite;
+      padding: 18px 80px;
+      border-radius: 32px;
+      transition: all 0.5s ease-out;
+      &:hover {
+        background: linear-gradient(90deg, #a24ed6 0%, #7e74c1 34%, #509cab 70%, #2abe99 100%);
+        background-position: 1% 50%;
+        background-position: 70% 50%;
+        background-size: 200% auto;
+        border: transparent;
+      }
+    }
+  }
+}
+
+.spring {
+  background: url("/images/spring/haru.jpg") no-repeat center;
+}
+.summer {
+  background: url("/images/summer/summer.jpg") no-repeat center;
+}
+.autumn {
+  background: url("/images/autumn/fall.jpg") no-repeat center;
+}
+.winter {
+  background: url("/images/winter/fuyu.jpg") no-repeat center;
+}
+
+
+footer {
+  position: absolute;
+  bottom: 10px;
+  left: calc(50% - 90px);
+  z-index: 5;
+}

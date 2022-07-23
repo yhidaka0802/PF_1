@@ -6,117 +6,88 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0, viewport-fit=cover" />
     <title>HP3</title>
     <meta name="description" content="" />
-    <meta property="og:url" content="https://〇〇.com/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="" />
-    <meta property="og:description" content="" />
-    <meta property="og:site_name" content="" />
-    <meta property="og:image" content=" https://〇〇.com/images/〇〇" />
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="Twitterのアカウントをいれる">
-    <meta name="robots" content="INDEX,FOLLOW">
     <link rel="icon" type="image/x-icon" href="">
     <link rel="apple-touch-icon" sizes="180×180" href="">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
   </head>
-
   <body>
-    <header id="header">
-      <div id="slider" class="slider_box">
-        <div class="slider_imgbox">
-          <img src="images/spring/sakura.jpg" class="slide_img">
-          <img src="images/summer/summer.jpg" class="slide_img">
-          <img src="images/autumn/fall.jpg" class="slide_img">
-          <img src="images/winter/fuyu.jpg" class="slide_img">
-        </div>
-
-
-
-        <div class="top_ttl-box">
-          <h1 class="top_ttl_h1">Four seasons</h1>
-          <p class="top_ttl_p">四季</p>
-        </div>
-        <ul id="header_ul" class="header_ul">
-          <li class="header_li">
-            <a href="index.html" class="header_a">home</a>
-          </li>
-          <li class="header_li">
-            <a href="photo.html" class="header_a">photos</a>
-          </li>
-          <li class="header_li">
-            <a href="contact.html" class="header_a">contact</a>
-          </li>
-          <li class="header_li">
-            <a href="blog.html" class="header_a">blog</a>
-          </li>
+    <header>
+      <nav>
+        <ul class="header_list">
+          <li><a href="/index.html">home</a></li>
+          <li><a href="/html/photo.html">photos</a></li>
+          <li><a href="/html/contact.html">contact</a></li>
+          <li><a href="/html/blog.html">blog</a></li>
         </ul>
-      </div>
+      </nav>
     </header>
-
     <main>
-      <section id="season" class="season_area box">
-        <div class="box-area">
-          <div class="descript_box fade">
-            <h2 class="descript_h2">
-              Four seasons <span class="descript_span">四季</span>
+      <section class="mainvisual box" id="box1">
+        <div class="mainvisual_wrapper">
+          <h1 class="site_title">Four season</h1>
+          <small>四季</small>
+        </div>
+        <ul class="slider">
+          <li class="slider-item slider-item1"></li>
+          <li class="slider-item slider-item2"></li>
+          <li class="slider-item slider-item3"></li>
+          <li class="slider-item slider-item4"></li>
+        </ul>
+      </section>
+      <section class="about box" id="box2">
+        <div class="about_wrapper">
+          <div class="about_txt">
+            <h2 class="about_title">
+              <small>Four seasons</small>
+              四季
             </h2>
-            <p class="descript_p">世界の四季<br /></p>
-            <dl>
-              <dt>日本の四季</dt>
-              <dd>日本の四季は特殊です</dd>
-              <dd>日本が特徴的なのは「春」と</dd>
-              <dd>「秋」が明確に季節となっていることです。</dd>
-            </dl>
+            <p class="first-txt">世界の四季</p>
+            <p>日本の四季<br>日本の四季は特殊です<br>日本が特徴的なのは「春」と<br>「秋」が明確に季節になっていることです。</p>
           </div>
         </div>
       </section>
-
-      <section id="spring" class="spring_area box">
-        <div class="season_box">
-          <h2 class="textSepa">Spring</h2>
-          <a href="photo.html" class="btnGradient">View Photos</a>
+      <section class="spring top-visual box" id="box3">
+        <div class="top-visual_wrapper">
+          <h2 class="section_title">Spring</h2>
+          <a href="/html/photo.html" class="button">View Photos</a>
         </div>
       </section>
-
-      <section id="summer" class="summer_area box">
-        <div class="season_box">
-          <h2 class="textSepa">Summer</h2>
-          <a href="photo.html" class="btnGradient">View Photos</a>
+      <section class="summer top-visual box" id="box4">
+        <div class="top-visual_wrapper">
+          <h2 class="section_title">Summer</h2>
+          <a href="/html/photo.html" class="button">View Photos</a>
         </div>
       </section>
-
-      <section id="autumn" class="autumn_area box">
-        <div class="season_box">
-          <h2 class="textSepa">Autumn</h2>
-          <a href="photo.html" class="btnGradient">View Photos</a>
+      <section class="autumn top-visual box" id="box5">
+        <div class="top-visual_wrapper">
+          <h2 class="section_title">Autumn</h2>
+          <a href="/html/photo.html" class="button">View Photos</a>
         </div>
       </section>
-
-      <section id="winter" class="winter_area box">
-        <div class="season_box">
-          <h2 class="textSepa">Winter</h2>
-          <a href="photo.html" class="btnGradient">View Photos</a>
+      <section class="winter top-visual box" id="box6">
+        <div class="top-visual_wrapper">
+          <h2 class="section_title">Winter</h2>
+          <a href="/html/photo.html" class="button">View Photos</a>
         </div>
       </section>
     </main>
-
-    <footer class="footer __mt">
-      <small class="footer_txt footer_small"
-        >&copy;SHIKI ALL rights reserved</small
-      >
+    <footer>
+      <p class="copy-right">©SHIKI ALL rights reserved</p>
     </footer>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js"></script>
-  
+
     <script src="scripts/other.js"></script>
-    <script src="scripts/slick.js"></script>
+    <script src="scripts/slick_index.js"></script>
     <script src="scripts/main.js"></script>
   </body>
-  
+
   </html>

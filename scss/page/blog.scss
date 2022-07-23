@@ -1,0 +1,97 @@
+@import "../base";
+@import "../config";
+@import "../mixin";
+
+.site-title {
+  color: $cBlack;
+  text-align: center;
+  margin-top: 50px;
+  @include mq(sp){
+    font-size: 45px;
+    margin-top: 80px;
+  }
+}
+
+.blog {
+  &_item{ 
+    padding: 0 4%;
+    a{
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      margin-top: 100px;
+      @include mq(sp){
+        margin-top: 40px;
+      }
+      &:hover {
+        opacity: 0.7;
+      }
+      .blog_text {
+        margin-right: -70px;
+        z-index: 5;
+        }
+      }
+      &:nth-child(2n) a{
+        flex-direction: row-reverse;
+        .blog_text {
+          text-align: right;
+          margin-right: 0;
+          margin-left: -70px;
+        }
+      }
+    }
+    &_text {
+      position: relative;
+      @include mq(sp){
+        width: 50%;
+      }
+      &::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: $cBlack;
+        transition: all .3s;
+        transform: scale(0,1);
+        transform-origin: center top;
+      }
+      &:hover::after {
+        transform: scale(1,1);
+      }
+      h2 {
+        color: $cBlack;
+        font-family: $font;
+        font-size: 50px;
+        @include mq(sp){
+          font-size: 24px;
+        }
+      }
+      p {
+        font-size: 30px;
+        @include mq(sp){
+          font-size: 16px;
+        }
+      }
+    }
+    &_img {
+      width: 70%;
+      height: 600px;
+      @include mq(sp){
+        height: auto;
+        width: 100%;
+      }
+      img{
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+}
+
+
+footer {
+  margin-top: 150px;
+  margin-bottom: 30px;
+  text-align: center;
+}

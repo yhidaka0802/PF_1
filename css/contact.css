@@ -1,0 +1,155 @@
+@charset "UTF-8";
+body {
+  color: #555;
+  word-break: break-all;
+  font-size: 18px;
+  font-family: "Palatino", "凸版文久明朝", serif;
+  line-height: 1.8;
+}
+
+main {
+  width: 100%;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+h1, h2 {
+  color: #fff;
+  letter-spacing: 0.05em;
+  font-weight: normal;
+  font-family: "Parisienne", serif;
+  font-size: 120px;
+  line-height: 1;
+}
+
+body {
+  background: rgb(253, 247, 251);
+  background: linear-gradient(20deg, rgb(253, 247, 251) 0%, rgb(222, 94, 134) 89%);
+}
+
+.contact {
+  margin-top: 200px;
+  padding: 0 4%;
+}
+.contact .inner {
+  margin: 0 auto;
+  padding-bottom: 30px;
+  max-width: 800px;
+  width: 100%;
+  background: #fff;
+}
+@media screen and (max-width: 480px) {
+  .contact .inner {
+    padding-bottom: 50px;
+  }
+}
+.contact .inner .site-title {
+  margin-bottom: 30px;
+  padding-top: 40px;
+  color: #000;
+  text-align: center;
+  font-size: 60px;
+}
+@media screen and (max-width: 480px) {
+  .contact .inner .site-title {
+    padding-top: 80px;
+    font-size: 40px;
+  }
+}
+.contact_form {
+  margin: 0 auto;
+  width: 85%;
+}
+.contact_form_title {
+  width: 35%;
+  height: 100%;
+  font-size: 16px;
+}
+@media screen and (max-width: 480px) {
+  .contact_form_title {
+    margin-bottom: 10px;
+  }
+}
+.contact_form_box {
+  padding-left: 8px;
+  width: 65%;
+  height: 40px;
+  border-width: 1px;
+  background: #ECECEC;
+  font-size: 16px;
+}
+@media screen and (max-width: 480px) {
+  .contact_form_box {
+    width: 99%;
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+}
+.contact_form_textarea {
+  margin-bottom: 40px;
+  padding: 7px;
+  width: 65%;
+  height: 200px;
+  background: #ECECEC;
+  font-size: 16px;
+}
+@media screen and (max-width: 480px) {
+  .contact_form_textarea {
+    width: 94%;
+  }
+}
+.contact_box {
+  display: flex;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 480px) {
+  .contact_box {
+    flex-direction: column;
+  }
+}
+.contact_box:last-child {
+  margin-bottom: 0;
+}
+.contact_button {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  height: 50px;
+  background: #000;
+  color: #fff;
+  font-size: 20px;
+  font-family: "Palatino", "凸版文久明朝", serif;
+  cursor: pointer;
+}
+@media screen and (max-width: 480px) {
+  .contact_button {
+    height: 40px;
+  }
+}
+.contact_button:hover {
+  background: #fff;
+  color: #000;
+}
+
+footer {
+  margin-top: 150px;
+  margin-bottom: 30px;
+  color: #fff;
+  text-align: center;
+}
+@media screen and (max-width: 480px) {
+  footer {
+    margin: 50px 0;
+  }
+}

@@ -1,0 +1,220 @@
+@charset "UTF-8";
+body {
+  color: #555;
+  word-break: break-all;
+  font-size: 18px;
+  font-family: "Palatino", "凸版文久明朝", serif;
+  line-height: 1.8;
+}
+
+main {
+  width: 100%;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+h1, h2 {
+  color: #fff;
+  letter-spacing: 0.05em;
+  font-weight: normal;
+  font-family: "Parisienne", serif;
+  font-size: 120px;
+  line-height: 1;
+}
+
+.slider {
+  position: absolute;
+  z-index: 1;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+.slider-item {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.slider-item1 {
+  background-image: url("/images/spring/sakura.jpg");
+}
+.slider-item2 {
+  background-image: url("/images/summer/summer.jpg");
+}
+.slider-item3 {
+  background-image: url("/images/autumn/fall.jpg");
+}
+.slider-item4 {
+  background-image: url("/images/winter/fuyu.jpg");
+}
+
+.slick-slide {
+  margin: 0;
+}
+
+.add-animation {
+  -webkit-animation: fadezoom 5s 0s forwards;
+          animation: fadezoom 5s 0s forwards;
+}
+
+@-webkit-keyframes fadezoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes fadezoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+.mainvisual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.mainvisual_wrapper {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+@media screen and (max-width: 480px) {
+  .mainvisual_wrapper h1 {
+    font-size: 40px;
+  }
+}
+.mainvisual_wrapper small {
+  color: #fff;
+  letter-spacing: 0.4em;
+  font-size: 20px;
+}
+@media screen and (max-width: 480px) {
+  .mainvisual_wrapper small {
+    font-size: 26px;
+    letter-spacing: 0.3em;
+  }
+}
+
+.about {
+  min-height: 100vh;
+  background-size: cover;
+  background: url("/images/spring/sakura.jpg") no-repeat center;
+  position: relative;
+}
+@media screen and (max-width: 480px) {
+  .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.about_wrapper {
+  position: absolute;
+  top: 22%;
+  left: 5%;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: inline-block;
+  padding: 3%;
+}
+@media screen and (max-width: 480px) {
+  .about_wrapper {
+    padding: 15%;
+    position: static;
+  }
+}
+.about_txt {
+  width: 220px;
+}
+.about_title {
+  color: #555;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.about_title small {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 20px;
+}
+.about .first-txt {
+  margin-bottom: 60px;
+}
+.about p {
+  line-height: 1.5;
+}
+
+.top-visual {
+  min-height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top-visual_wrapper {
+  text-align: center;
+}
+.top-visual_wrapper .section_title {
+  margin-bottom: 80px;
+}
+@media screen and (max-width: 480px) {
+  .top-visual_wrapper .section_title {
+    font-size: 75px;
+    margin-bottom: 100px;
+  }
+}
+.top-visual_wrapper .button {
+  display: inline-block;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 18px 80px;
+  border-radius: 32px;
+  transition: all 0.5s ease-out;
+}
+.top-visual_wrapper .button:hover {
+  background: linear-gradient(90deg, #a24ed6 0%, #7e74c1 34%, #509cab 70%, #2abe99 100%);
+  background-position: 1% 50%;
+  background-position: 70% 50%;
+  background-size: 200% auto;
+  border: transparent;
+}
+
+.spring {
+  background: url("/images/spring/haru.jpg") no-repeat center;
+}
+
+.summer {
+  background: url("/images/summer/summer.jpg") no-repeat center;
+}
+
+.autumn {
+  background: url("/images/autumn/fall.jpg") no-repeat center;
+}
+
+.winter {
+  background: url("/images/winter/fuyu.jpg") no-repeat center;
+}
+
+footer {
+  position: absolute;
+  bottom: 10px;
+  left: calc(50% - 90px);
+  z-index: 5;
+}

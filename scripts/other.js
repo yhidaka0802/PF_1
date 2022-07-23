@@ -1,7 +1,5 @@
 "use strict";
 
-
-
 // スクロールで１ページ変わる
 $.scrollify({
 	section : ".box",

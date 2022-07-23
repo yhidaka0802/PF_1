@@ -1,0 +1,45 @@
+.slick {
+  &-slide {
+    margin: 0 20px;
+  }
+  &-list {
+    padding: 0 0 10px 0;
+  }
+  &-prev,&-next {
+    position: absolute;
+    top: 42%;
+    cursor: pointer;
+    outline: none;
+    border-top: 2px solid $cDot;
+    border-right: 2px solid $cDot;
+    height: 15px;
+    width: 15px;
+  }
+  &-prev {
+    left: -1.5%;
+    transform: rotate(-135deg);
+  }
+  &-next {
+    right: -1.5%;
+    transform: rotate(45deg);
+  }
+  
+  &-dots {
+    text-align: center;
+    margin: 20px 0 0 0;
+    li {
+      display: inline-block;
+      margin: 0 5px;
+    }
+    button {
+      color: transparent;
+      outline: none;
+      border: none;
+      width: 8px;
+      height: 10px;
+      display: block;
+      border-radius: 50%;
+      background: $cDot;
+    }
+  }
+}
