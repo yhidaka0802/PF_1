@@ -33,58 +33,6 @@ h1, h2 {
   line-height: 1;
 }
 
-.slider {
-  position: absolute;
-  z-index: 1;
-  height: 100vh;
-  width: 100%;
-  overflow: hidden;
-}
-.slider-item {
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-.slider-item1 {
-  background-image: url("/images/spring/sakura.jpg");
-}
-.slider-item2 {
-  background-image: url("/images/summer/summer.jpg");
-}
-.slider-item3 {
-  background-image: url("/images/autumn/fall.jpg");
-}
-.slider-item4 {
-  background-image: url("/images/winter/fuyu.jpg");
-}
-
-.slick-slide {
-  margin: 0;
-}
-
-.add-animation {
-  -webkit-animation: fadezoom 5s 0s forwards;
-          animation: fadezoom 5s 0s forwards;
-}
-
-@-webkit-keyframes fadezoom {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.05);
-  }
-}
-
-@keyframes fadezoom {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.05);
-  }
-}
 body {
   position: relative;
 }
@@ -95,13 +43,19 @@ header .header_list {
   right: 40px;
   z-index: 10;
 }
+@media screen and (max-width: 480px) {
+  header .header_list {
+    top: 10px;
+    right: 20px;
+  }
+}
 header .header_list li {
   display: inline-block;
   margin-right: 20px;
 }
 @media screen and (max-width: 480px) {
   header .header_list li {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 header .header_list li:last-child {
@@ -110,5 +64,5 @@ header .header_list li:last-child {
 
 footer {
   font-size: 12px;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.01em;
 }

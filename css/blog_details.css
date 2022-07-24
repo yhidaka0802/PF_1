@@ -34,67 +34,93 @@ h1, h2 {
 }
 
 .blog_detail {
-  margin-top: 60px;
+  margin-top: 70px;
 }
 @media screen and (max-width: 480px) {
   .blog_detail {
-    margin-top: 80px;
+    margin-top: 60px;
   }
 }
 .blog_detail .inner {
-  max-width: 800px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 4%;
 }
+@media screen and (max-width: 480px) {
+  .blog_mainvisual img {
+    height: 280px;
+  }
+}
 .blog_txt {
-  margin-top: 40px;
+  max-width: 1100px;
+  color: #000;
 }
 .blog_txt h1 {
-  color: #555;
+  color: #000;
   font-weight: normal;
   font-family: "Palatino", "凸版文久明朝", serif;
-  font-size: 35px;
+  font-size: 50px;
   line-height: 1.2;
-  margin-bottom: 25px;
+  margin: 60px 0 30px;
 }
 @media screen and (max-width: 480px) {
   .blog_txt h1 {
-    margin: 45px 0;
-    font-size: 24px;
+    margin: 40px 0 25px;
+    font-size: 18px;
     line-height: 1.5;
   }
 }
 .blog_txt p {
-  line-height: 1.5;
+  font-size: 26px;
+  line-height: 1.6;
+}
+@media screen and (max-width: 480px) {
+  .blog_txt p {
+    font-size: 13px;
+    line-height: 1.4;
+  }
 }
 .blog_link {
-  margin-top: 80px;
+  color: #000;
+  margin-top: 180px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.blog_link a {
-  font-size: 20px;
+@media screen and (max-width: 480px) {
+  .blog_link {
+    margin-top: 40px;
+  }
 }
-.blog_link h3 {
-  margin: 0 50px;
-  font-size: 26px;
-  font-weight: normal;
+.blog_link a {
+  font-size: 28px;
 }
 @media screen and (max-width: 480px) {
-  .blog_link h3 {
-    margin: 0 20px;
+  .blog_link a {
+    font-size: 12px;
+  }
+}
+.blog_link .center {
+  margin: 0 85px;
+}
+.blog_link .center a {
+  font-size: 34px;
+}
+@media screen and (max-width: 480px) {
+  .blog_link .center {
+    margin: 0 25px;
+  }
+  .blog_link .center a {
+    font-size: 16px;
   }
 }
 
 footer {
-  margin-top: 200px;
-  margin-bottom: 30px;
+  margin: 330px auto 90px;
   text-align: center;
 }
 @media screen and (max-width: 480px) {
   footer {
-    margin-top: 150px;
-    margin-bottom: 50px;
+    margin: 90px 0 20px;
   }
 }

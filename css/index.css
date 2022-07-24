@@ -86,10 +86,10 @@ h1, h2 {
   }
 }
 .mainvisual {
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 .mainvisual_wrapper {
   position: relative;
@@ -108,16 +108,45 @@ h1, h2 {
 }
 @media screen and (max-width: 480px) {
   .mainvisual_wrapper small {
-    font-size: 26px;
     letter-spacing: 0.3em;
+    font-size: 26px;
   }
 }
 
+.fadeIn {
+  -webkit-animation: fadeInAnime 1s forwards;
+          animation: fadeInAnime 1s forwards;
+  opacity: 0;
+}
+
+.fadeInTrigger {
+  opacity: 0;
+}
+
+@-webkit-keyframes fadeInAnime {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInAnime {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .about {
-  min-height: 100vh;
-  background-size: cover;
-  background: url("/images/spring/sakura.jpg") no-repeat center;
   position: relative;
+  background-image: url("/images/spring/sakura.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
 }
 @media screen and (max-width: 480px) {
   .about {
@@ -130,29 +159,29 @@ h1, h2 {
   position: absolute;
   top: 22%;
   left: 5%;
-  background-color: rgba(255, 255, 255, 0.8);
   display: inline-block;
   padding: 3%;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 @media screen and (max-width: 480px) {
   .about_wrapper {
-    padding: 15%;
     position: static;
+    padding: 15%;
   }
 }
 .about_txt {
   width: 220px;
 }
 .about_title {
-  color: #555;
-  font-size: 24px;
-  text-align: center;
   margin-bottom: 60px;
+  color: #555;
+  text-align: center;
+  font-size: 24px;
 }
 .about_title small {
-  font-size: 16px;
   display: block;
   margin-bottom: 20px;
+  font-size: 16px;
 }
 .about .first-txt {
   margin-bottom: 60px;
@@ -162,7 +191,9 @@ h1, h2 {
 }
 
 .top-visual {
-  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -176,40 +207,40 @@ h1, h2 {
 }
 @media screen and (max-width: 480px) {
   .top-visual_wrapper .section_title {
-    font-size: 75px;
     margin-bottom: 100px;
+    font-size: 75px;
   }
 }
 .top-visual_wrapper .button {
   display: inline-block;
-  color: #fff;
-  border: 1px solid #fff;
   padding: 18px 80px;
+  border: 1px solid #fff;
   border-radius: 32px;
+  color: #fff;
   transition: all 0.5s ease-out;
 }
 .top-visual_wrapper .button:hover {
+  border: transparent;
   background: linear-gradient(90deg, #a24ed6 0%, #7e74c1 34%, #509cab 70%, #2abe99 100%);
   background-position: 1% 50%;
   background-position: 70% 50%;
   background-size: 200% auto;
-  border: transparent;
 }
 
 .spring {
-  background: url("/images/spring/haru.jpg") no-repeat center;
+  background-image: url("/images/spring/haru.jpg");
 }
 
 .summer {
-  background: url("/images/summer/summer.jpg") no-repeat center;
+  background-image: url("/images/summer/summer.jpg");
 }
 
 .autumn {
-  background: url("/images/autumn/fall.jpg") no-repeat center;
+  background-image: url("/images/autumn/fall.jpg");
 }
 
 .winter {
-  background: url("/images/winter/fuyu.jpg") no-repeat center;
+  background-image: url("/images/winter/fuyu.jpg");
 }
 
 footer {
@@ -217,4 +248,5 @@ footer {
   bottom: 10px;
   left: calc(50% - 90px);
   z-index: 5;
+  letter-spacing: 0.1em;
 }

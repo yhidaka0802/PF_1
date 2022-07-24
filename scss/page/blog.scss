@@ -3,84 +3,96 @@
 @import "../mixin";
 
 .site-title {
+  margin-top: 50px;
   color: $cBlack;
   text-align: center;
-  margin-top: 50px;
+  font-size: 110px;
+
   @include mq(sp){
-    font-size: 45px;
-    margin-top: 80px;
+    margin-top: 60px;
+    font-size: 40px;
   }
 }
 
 .blog {
-  &_item{ 
+  &_list {
+    margin-top: 120px;
+
+    @include mq(sp){
+    margin-top: 35px;  
+    }
+  }
+  &_item{
+    margin: 0 auto 160px; 
     padding: 0 4%;
+    max-width: 1350px;
+    @include mq(sp){
+      margin-bottom: 40px;
+    }
+
     a{
-      justify-content: center;
       display: flex;
       align-items: center;
-      margin-top: 100px;
-      @include mq(sp){
-        margin-top: 40px;
-      }
+      justify-content: center;
+
       &:hover {
         opacity: 0.7;
       }
       .blog_text {
-        margin-right: -70px;
         z-index: 5;
+        margin-right: -90px;
         }
       }
       &:nth-child(2n) a{
         flex-direction: row-reverse;
         .blog_text {
-          text-align: right;
           margin-right: 0;
-          margin-left: -70px;
+          margin-left: -130px;
+          text-align: right;
         }
       }
     }
     &_text {
       position: relative;
+      display: inline-block;
+      background: 
+        linear-gradient(currentColor 0 0)
+        bottom/var(--d, 0) 2px
+        no-repeat;
+      transition: 0.5s;
+      &:hover {
+        --d: 100%;
+      }
+
       @include mq(sp){
-        width: 50%;
+        width: 60%;
       }
-      &::after{
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background: $cBlack;
-        transition: all .3s;
-        transform: scale(0,1);
-        transform-origin: center top;
-      }
-      &:hover::after {
-        transform: scale(1,1);
-      }
+
       h2 {
         color: $cBlack;
+        text-shadow: 6px 5px 5px $cWhite;
+        font-size: 70px;
         font-family: $font;
-        font-size: 50px;
+
         @include mq(sp){
-          font-size: 24px;
+          font-size: 20px;
         }
       }
       p {
-        font-size: 30px;
+        font-size: 35px;
+
         @include mq(sp){
-          font-size: 16px;
+          font-size: 12px;
         }
       }
     }
     &_img {
-      width: 70%;
-      height: 600px;
+      width: 73%;
+      height: 650px;
+
       @include mq(sp){
-        height: auto;
-        width: 100%;
+        width: 70%;
+        height: 170px;
       }
       img{
         height: 100%;
@@ -89,9 +101,19 @@
     }
 }
 
+@keyframes txtnav {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
 
 footer {
-  margin-top: 150px;
-  margin-bottom: 30px;
+  margin: 400px auto 70px;
   text-align: center;
+  @include mq(sp){
+    margin: 100px 0 20px;
+  }
 }
