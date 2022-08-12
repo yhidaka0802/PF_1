@@ -3,12 +3,13 @@
 @import "../mixin";
 
 body {
-  background: linear-gradient(20deg, rgb(255, 255, 255) 0%, rgb(247, 138, 160) 70%, rgba(239, 146, 156) 100%);
+  background: linear-gradient(20deg, #ffffff 0%, #9ee2de 33%, #65b5ce 66%, #2a7fbe 100%);
 }
 
 .contact {
   margin-top: 200px;
   padding: 0 4%;
+
   @include mq(sp){
     margin-top: 80px;
   }
@@ -19,6 +20,7 @@ body {
     max-width: 780px;
     width: 100%;
     background: $cWhite;
+
     @include mq(sp){
       padding-bottom: 40px;
     }
@@ -28,6 +30,7 @@ body {
       padding-top: 60px;
       color: $cBlack;
       text-align: center;
+      text-shadow: 2px 4px 3px $cGray;
       font-size: 60px;
 
       @include mq(sp){
@@ -46,6 +49,7 @@ body {
       width: 26%;
       height: 100%;
       font-size: 16px;
+
       @include mq(sp){
         margin-bottom: 4px;
         margin-left: 0;
@@ -58,10 +62,11 @@ body {
       border-width: 1px;
       background: $cGray_pale;
       font-size: 16px;
+
       @include mq(sp){
-        width: 99%;
-        padding-left: 0;
         margin-bottom: 10pxpx;
+        padding-left: 0;
+        width: 99%;
       }
     }
     &_textarea{
@@ -71,10 +76,11 @@ body {
       height: 180px;
       background: $cGray_pale;
       font-size: 16px;
+
       @include mq(sp){
+        margin-bottom: 20px;
         width: 94%;
         height: 200px;
-        margin-bottom: 20px;
       }
     }
   }
@@ -82,6 +88,7 @@ body {
   &_box {
     display: flex;
     margin-bottom: 25px;
+
     @include mq(sp){
       flex-direction: column;
     }
@@ -95,16 +102,17 @@ body {
     margin: 0 auto;
     width: 150px;
     height: 40px;
+    border: none;
     background: $cBlack;
     color: $cWhite;
     font-size: 20px;
     font-family: $font;
     cursor: pointer;
-    border: none;
     transition: all .5s;
+
     @include mq(sp){
-      height: 30px;
       width: 130px;
+      height: 30px;
 
     }
     &:hover {
@@ -119,6 +127,7 @@ footer {
   margin-bottom: 70px;
   color: $cWhite;
   text-align: center;
+
   @include mq(sp){
     margin: 35px 0;
   }

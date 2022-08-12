@@ -1,0 +1,27 @@
+.pagenation {
+  position: fixed;
+  top: calc(50vh - 116px);
+  right: 0;
+  z-index: 10;
+  padding: 20px;
+
+  li {
+    margin-bottom: 20px;
+    list-style: none;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  a{
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid $cWhite;
+
+    &.active {
+      background-color: $cWhite;
+    }
+  }
+}
+

@@ -8,8 +8,8 @@ $(function() {
   .slick ({
     fade: true,
     autoplay: true,
-    autoplaySpeed: 2000,
-    speed: 1000,
+    autoplaySpeed: 3000,
+    speed: 2000,
     infinite: true,
     slideToShow: 1,
     arrows: false,

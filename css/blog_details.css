@@ -3,7 +3,7 @@ body {
   color: #555;
   word-break: break-all;
   font-size: 18px;
-  font-family: "Palatino", "凸版文久明朝", serif;
+  font-family: "Quicksand", "筑紫A丸ゴシック", serif;
   line-height: 1.8;
 }
 
@@ -28,7 +28,7 @@ h1, h2 {
   color: #fff;
   letter-spacing: 0.05em;
   font-weight: normal;
-  font-family: "Parisienne", serif;
+  font-family: "Sacramento", "筑紫A丸ゴシック", serif;
   font-size: 120px;
   line-height: 1;
 }
@@ -45,6 +45,28 @@ h1, h2 {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 4%;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 480px) {
+  .blog_detail .inner {
+    display: block;
+  }
+}
+.blog_mainvisual {
+  width: 50%;
+}
+@media screen and (max-width: 480px) {
+  .blog_mainvisual {
+    width: 100%;
+  }
+}
+.blog_mainvisual img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center right;
+     object-position: center right;
+  height: 80vh;
 }
 @media screen and (max-width: 480px) {
   .blog_mainvisual img {
@@ -52,16 +74,21 @@ h1, h2 {
   }
 }
 .blog_txt {
-  max-width: 1100px;
+  width: 40%;
   color: #000;
+}
+@media screen and (max-width: 480px) {
+  .blog_txt {
+    width: 100%;
+  }
 }
 .blog_txt h1 {
   color: #000;
   font-weight: normal;
-  font-family: "Palatino", "凸版文久明朝", serif;
-  font-size: 50px;
+  font-family: "Quicksand", "筑紫A丸ゴシック", serif;
+  font-size: 40px;
   line-height: 1.2;
-  margin: 60px 0 30px;
+  margin-bottom: 30px;
 }
 @media screen and (max-width: 480px) {
   .blog_txt h1 {
@@ -71,7 +98,7 @@ h1, h2 {
   }
 }
 .blog_txt p {
-  font-size: 26px;
+  font-size: 20px;
   line-height: 1.6;
 }
 @media screen and (max-width: 480px) {

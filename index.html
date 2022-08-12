@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0, viewport-fit=cover" />
-    <title>HP3</title>
+    <title>PF_1</title>
     <meta name="description" content="" />
     <link rel="icon" type="image/x-icon" href="">
     <link rel="apple-touch-icon" sizes="180×180" href="">
@@ -13,22 +13,23 @@
     <link rel="stylesheet" type="text/css" href="css/common.css" />
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Sacramento&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
-      <nav>
-        <ul class="header_list">
-          <li><a href="/index.html">home</a></li>
-          <li><a href="/html/photo.html">photos</a></li>
-          <li><a href="/html/contact.html">contact</a></li>
-          <li><a href="/html/blog.html">blog</a></li>
-        </ul>
-      </nav>
+        <div class="openbtn"><span></span><span></span><span></span></div>
+        <nav id="g-nav">
+          <ul>
+            <li><a href="/index.html">home</a></li>
+            <li><a href="/html/photo.html">photos</a></li>
+            <li><a href="/html/contact.html">contact</a></li>
+            <li><a href="/html/blog.html">blog</a></li>
+          </ul>
+        </nav>
     </header>
     <main>
-      <section class="mainvisual box" id="box1">
-        <div class="mainvisual_wrapper">
+      <section class="mainvisual box" id="box1" data-section-name="Area1">
+        <div class="mainvisual_wrapper blurTrigger">
           <h1 class="site_title">Four season</h1>
           <small>四季</small>
         </div>
@@ -39,7 +40,7 @@
           <li class="slider-item slider-item4"></li>
         </ul>
       </section>
-      <section class="about box" id="box2">
+      <section class="about box" id="box2" data-section-name="Area2">
         <div class="about_wrapper fadeInTrigger">
           <div class="about_txt">
             <h2 class="about_title">
@@ -51,28 +52,36 @@
           </div>
         </div>
       </section>
-      <section class="spring top-visual box" id="box3">
-        <div class="top-visual_wrapper">
-          <h2 class="section_title">Spring</h2>
-          <a href="/html/photo.html" class="button">View Photos</a>
+      <section class="spring top-visual box" id="box3" data-section-name="Area3">
+        <div class="top-visual_wrapper slide-in leftAnime">
+          <div class="slide-in_inner leftAnimeInner">
+            <h2 class="section_title">Spring</h2>
+            <a href="/html/photo.html" class="button">View Photos</a>
+          </div>
         </div>
       </section>
-      <section class="summer top-visual box" id="box4">
-        <div class="top-visual_wrapper">
-          <h2 class="section_title">Summer</h2>
-          <a href="/html/photo.html" class="button">View Photos</a>
+      <section class="summer top-visual box" id="box4" data-section-name="Area4">
+        <div class="top-visual_wrapper slide-in leftAnime">
+          <div class="slide-in_inner leftAnimeInner">
+            <h2 class="section_title">Summer</h2>
+            <a href="/html/photo.html" class="button">View Photos</a>
+          </div>
         </div>
       </section>
-      <section class="autumn top-visual box" id="box5">
-        <div class="top-visual_wrapper">
-          <h2 class="section_title">Autumn</h2>
-          <a href="/html/photo.html" class="button">View Photos</a>
+      <section class="autumn top-visual box" id="box5" data-section-name="Area5">
+        <div class="top-visual_wrapper slide-in leftAnime">
+          <div class="slide-in_inner leftAnimeInner">
+            <h2 class="section_title">Autumn</h2>
+            <a href="/html/photo.html" class="button">View Photos</a>
+          </div>
         </div>
       </section>
-      <section class="winter top-visual box" id="box6">
-        <div class="top-visual_wrapper">
-          <h2 class="section_title">Winter</h2>
-          <a href="/html/photo.html" class="button">View Photos</a>
+      <section class="winter top-visual box" id="box6" data-section-name="Area6">
+        <div class="top-visual_wrapper slide-in leftAnime">
+          <div class="slide-in_inner leftAnimeInner">
+            <h2 class="section_title">Winter</h2>
+            <a href="/html/photo.html" class="button">View Photos</a>
+          </div>
         </div>
       </section>
     </main>
@@ -85,7 +94,7 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js"></script>
 
-    <script src="scripts/other.js"></script>
+    <!-- <script src="scripts/other.js"></script> -->
     <script src="scripts/slick_index.js"></script>
     <script src="scripts/main.js"></script>
   </body>

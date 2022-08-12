@@ -3,7 +3,7 @@ body {
   color: #555;
   word-break: break-all;
   font-size: 18px;
-  font-family: "Palatino", "凸版文久明朝", serif;
+  font-family: "Quicksand", "筑紫A丸ゴシック", serif;
   line-height: 1.8;
 }
 
@@ -28,7 +28,7 @@ h1, h2 {
   color: #fff;
   letter-spacing: 0.05em;
   font-weight: normal;
-  font-family: "Parisienne", serif;
+  font-family: "Sacramento", "筑紫A丸ゴシック", serif;
   font-size: 120px;
   line-height: 1;
 }
@@ -37,6 +37,7 @@ h1, h2 {
   margin-top: 50px;
   color: #000;
   text-align: center;
+  text-shadow: 2px 4px 3px #666;
   font-size: 110px;
 }
 @media screen and (max-width: 480px) {
@@ -46,16 +47,26 @@ h1, h2 {
   }
 }
 
+.blog {
+  width: 100%;
+}
 .blog_list {
-  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 40%;
+  height: 1200px;
+  margin: 120px 10% 0;
 }
 @media screen and (max-width: 480px) {
   .blog_list {
-    margin-top: 35px;
+    height: 1400px;
+    width: 100%;
+    margin: 35px auto 0;
   }
 }
 .blog_item {
-  margin: 0 auto 160px;
+  margin: 0 auto 80px;
   padding: 0 4%;
   max-width: 1350px;
 }
@@ -76,41 +87,60 @@ h1, h2 {
   z-index: 5;
   margin-right: -90px;
 }
-.blog_item:nth-child(2n) a {
+.blog_item:nth-child(3n+2) a {
   flex-direction: row-reverse;
 }
-.blog_item:nth-child(2n) a .blog_text {
+.blog_item:nth-child(3n+2) a .blog_text {
   margin-right: 0;
   margin-left: -130px;
   text-align: right;
 }
+@media screen and (max-width: 480px) {
+  .blog_item:nth-child(3n+2) a {
+    flex-direction: row;
+  }
+  .blog_item:nth-child(3n+2) a .blog_text {
+    margin-right: -90px;
+    margin-left: 0;
+    text-align: left;
+  }
+  .blog_item:nth-child(2n) a {
+    flex-direction: row-reverse;
+  }
+  .blog_item:nth-child(2n) a .blog_text {
+    margin-right: 0;
+    margin-left: -100px;
+    text-align: right;
+  }
+}
 .blog_text {
+  width: 60%;
   position: relative;
   display: inline-block;
   background: linear-gradient(currentColor 0 0) bottom/var(--d, 0) 2px no-repeat;
   transition: 0.5s;
-}
-.blog_text:hover {
-  --d: 100%;
 }
 @media screen and (max-width: 480px) {
   .blog_text {
     width: 60%;
   }
 }
+.blog_text:hover {
+  --d: 100%;
+}
 .blog_text h2 {
   color: #000;
   text-shadow: 6px 5px 5px #fff;
-  font-size: 70px;
-  font-family: "Palatino", "凸版文久明朝", serif;
+  font-size: 42px;
+  font-family: "Quicksand", "筑紫A丸ゴシック", serif;
 }
 @media screen and (max-width: 480px) {
   .blog_text h2 {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 .blog_text p {
-  font-size: 35px;
+  font-size: 26px;
 }
 @media screen and (max-width: 480px) {
   .blog_text p {
@@ -118,8 +148,9 @@ h1, h2 {
   }
 }
 .blog_img {
+  margin-right: 5%;
   width: 73%;
-  height: 650px;
+  height: 300px;
 }
 @media screen and (max-width: 480px) {
   .blog_img {
@@ -129,6 +160,7 @@ h1, h2 {
 }
 .blog_img img {
   height: 100%;
+  border-radius: 8px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -151,7 +183,7 @@ h1, h2 {
   }
 }
 footer {
-  margin: 400px auto 70px;
+  margin: 100px auto 70px;
   text-align: center;
 }
 @media screen and (max-width: 480px) {

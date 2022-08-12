@@ -2,7 +2,7 @@
 @import "../config";
 @import "../mixin";
 @import "../slick_index";
-@import "../scrollfy";
+@import "../scrollify";
 
 .mainvisual {
   height: 100vh;
@@ -33,24 +33,6 @@
   }
 }
 
-.fadeIn {
-  animation: fadeInAnime 1s forwards;
-  opacity: 0;
-}
-
-.fadeInTrigger {
-  opacity: 0;
-}
-
-@keyframes fadeInAnime {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 .about {
   position: relative;
   background-image: url("/images/spring/sakura.jpg");
@@ -69,6 +51,7 @@
     display: inline-block;
     padding: 3%;
     background-color: rgba($color: #fff, $alpha: 0.8);
+    border-radius: 8px;
 
     @include mq(sp){
       position: static;
@@ -77,10 +60,13 @@
   }
   &_txt {
     width: 220px;
+    @include mq(sp){
+      width: 180px;
+    }
   }
 
   &_title {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     color: $cFont;
     text-align: center;
     font-size: 24px;
@@ -92,7 +78,7 @@
   }
   
   .first-txt {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
   }
   p {
     line-height: 1.5;

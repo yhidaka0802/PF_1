@@ -12,25 +12,45 @@
       max-width: 1100px;
       margin: 0 auto;
       padding:  0 4%;
+      display: flex;
+      justify-content: space-between;
+      
+      @include mq(sp){
+        display: block;
+      }
+
     }
   }
 
-  &_mainvisual img{
+  &_mainvisual {
+    width: 50%;
+
+    @include mq(sp){
+      width: 100%;
+    }
+    img{
+    object-fit: cover;
+    object-position: center right;
+    height: 80vh;
     @include mq(sp){
       height: 280px;
     }
   }
+  }
 
   &_txt {
-    max-width: 1100px;
+    width: 40%;
     color: $cBlack;
+    @include mq(sp){
+      width: 100%;
+    }
     h1 {
       color: $cBlack;
       font-weight: normal;
       font-family: $font;
-      font-size: 50px;
+      font-size: 40px;
       line-height: 1.2;
-      margin: 60px 0 30px;
+      margin-bottom: 30px;
       @include mq(sp){
         margin: 40px 0 25px;
         font-size: 18px;
@@ -38,7 +58,7 @@
       }
     }
     p{
-      font-size: 26px;
+      font-size: 20px;
       line-height: 1.6;
       @include mq(sp){
         font-size: 13px;

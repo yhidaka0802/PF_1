@@ -3,7 +3,7 @@ body {
   color: #555;
   word-break: break-all;
   font-size: 18px;
-  font-family: "Palatino", "凸版文久明朝", serif;
+  font-family: "Quicksand", "筑紫A丸ゴシック", serif;
   line-height: 1.8;
 }
 
@@ -28,7 +28,7 @@ h1, h2 {
   color: #fff;
   letter-spacing: 0.05em;
   font-weight: normal;
-  font-family: "Parisienne", serif;
+  font-family: "Sacramento", "筑紫A丸ゴシック", serif;
   font-size: 120px;
   line-height: 1;
 }
@@ -70,21 +70,45 @@ h1, h2 {
 
 @-webkit-keyframes fadezoom {
   0% {
-    transform: scale(1);
+    transform: scale(1.1);
   }
   100% {
-    transform: scale(1.05);
+    transform: scale(1);
   }
 }
 
 @keyframes fadezoom {
   0% {
-    transform: scale(1);
+    transform: scale(1.1);
   }
   100% {
-    transform: scale(1.05);
+    transform: scale(1);
   }
 }
+.pagenation {
+  position: fixed;
+  top: calc(50vh - 116px);
+  right: 0;
+  z-index: 10;
+  padding: 20px;
+}
+.pagenation li {
+  margin-bottom: 20px;
+  list-style: none;
+}
+.pagenation li:hover {
+  cursor: pointer;
+}
+.pagenation a {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #fff;
+}
+.pagenation a.active {
+  background-color: #fff;
+}
+
 .mainvisual {
   height: 100vh;
   display: flex;
@@ -113,33 +137,6 @@ h1, h2 {
   }
 }
 
-.fadeIn {
-  -webkit-animation: fadeInAnime 1s forwards;
-          animation: fadeInAnime 1s forwards;
-  opacity: 0;
-}
-
-.fadeInTrigger {
-  opacity: 0;
-}
-
-@-webkit-keyframes fadeInAnime {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeInAnime {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 .about {
   position: relative;
   background-image: url("/images/spring/sakura.jpg");
@@ -162,6 +159,7 @@ h1, h2 {
   display: inline-block;
   padding: 3%;
   background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
 }
 @media screen and (max-width: 480px) {
   .about_wrapper {
@@ -172,8 +170,13 @@ h1, h2 {
 .about_txt {
   width: 220px;
 }
+@media screen and (max-width: 480px) {
+  .about_txt {
+    width: 180px;
+  }
+}
 .about_title {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   color: #555;
   text-align: center;
   font-size: 24px;
@@ -184,7 +187,7 @@ h1, h2 {
   font-size: 16px;
 }
 .about .first-txt {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 .about p {
   line-height: 1.5;
